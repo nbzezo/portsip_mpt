@@ -35,6 +35,8 @@ Trạng thái dùng chung:
 | [16 — Kickoff và handoff](16-KICKOFF-VA-BAN-GIAO-PHIEN-TIEP-THEO.md) | Trạng thái kickoff, thứ tự tiếp tục và prompt bàn giao Codex | Người tiếp nhận, Codex | Delivery Lead | Mỗi phiên bàn giao hoặc gate đổi |
 | [Build Profile](BUILD-PROFILE.md) | Exact tool versions và command đã kiểm chứng | Developer, CI | Engineering Lead | Manifest/toolchain/command đổi |
 | [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md) | Quyết định D-023 về stack, boundary và reopen conditions | Architecture, Engineering, Security/DevOps | Engineering Lead | Stack/security/support condition đổi |
+| [Session registry](sessions/README.md) | Phiên tuần tự, trạng thái, Git tag và cú pháp tiếp tục | Tất cả/Codex | Delivery Lead | Mỗi lần mở/đóng phiên |
+| [Session 001](sessions/SESSION-001.md) | Snapshot, kiểm chứng, blocker và next action cuối phiên 001 | Người tiếp nhận/Codex | Delivery Lead | Immutable sau khi tag; đính chính ở phiên sau |
 | [TASKS.md](../TASKS.md) | Active/Waiting/Someday/Done hằng ngày | Tất cả | Project Manager/Delivery Lead | Cùng ngày khi task đổi trạng thái |
 | [AGENTS.md](../AGENTS.md) | Working agreement bắt buộc cho người/agent sửa repository | Contributor/automation | Engineering Lead | Gate/task-tracking/repo rule đổi |
 

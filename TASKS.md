@@ -40,6 +40,9 @@
 
 ## Done
 
+- [x] ~~**SESSION-001-CLOSE — Đóng và bàn giao phiên làm việc 001**~~ (2026-09-08)
+  - Accepted by Project Owner/user through explicit close-session instruction.
+  - Evidence: `docs/sessions/SESSION-001.md`; Git tag `session-001`.
 - [x] ~~**DISC-PMP-001 — Bổ sung PMP control checklist và live task tracking**~~ (2026-09-08)
   - Accepted by Project Owner/user through instruction to start and manage work with WBS/PMP/decision/evidence.
   - Evidence: `docs/evidence/DISC-PMP-001.md`

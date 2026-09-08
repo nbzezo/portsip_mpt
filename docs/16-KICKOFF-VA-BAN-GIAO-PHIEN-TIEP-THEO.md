@@ -1,4 +1,6 @@
-# Kickoff và bàn giao cho phiên Codex tiếp theo
+# Kickoff và bàn giao — phiên 001
+
+Phiên này đã **Closed**. Hồ sơ tuần tự đầy đủ nằm tại [SESSION-001](sessions/SESSION-001.md); registry và cú pháp tiếp tục nằm tại [Sổ đăng ký phiên](sessions/README.md). Phiên tiếp theo là `002`.
 
 ## 1. Trạng thái tại thời điểm bàn giao
 
@@ -26,7 +28,7 @@ Ngày `2026-09-08`, Project Owner đã yêu cầu bắt đầu ngay và tiếp t
 ## 4. Starter prompt cho phiên Codex tiếp theo
 
 ```text
-Tiếp tục dự án trong repository hiện tại. Đọc AGENTS.md, TASKS.md, docs/14-CONG-VIEC-HIEN-TAI.md, docs/15-PMP-CHECKLIST-VA-KIEM-SOAT-DU-AN.md, docs/16-KICKOFF-VA-BAN-GIAO-PHIEN-TIEP-THEO.md, docs/adr/ADR-001-IMPLEMENTATION-STACK.md và docs/BUILD-PROFILE.md. Chạy quality gate từ Build Profile, đối chiếu live board, chỉ nhận task Ready. Ưu tiên hoàn tất owner assignment, D-002 exact PortSIP contract và G0-06 synthetic environment; không dùng Production credential/data, không real dial/send hoặc mutate trunk. Cập nhật TASKS, decision register và evidence trong cùng change set.
+triển khai tiếp phiên làm việc 002
 ```
 
 ## 5. Stop conditions

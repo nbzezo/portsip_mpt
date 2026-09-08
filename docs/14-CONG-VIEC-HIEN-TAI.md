@@ -6,6 +6,8 @@ Ledger này trả lời câu hỏi đầu tiên của người tiếp nhận: **
 
 Snapshot: `2026-09-08` — giai đoạn `Discovery / Solution Design`; Project Owner đã khởi động Discovery. D-023 đã Approved có điều kiện cho Discovery scaffold; scaffold và Build Profile đã có, quality gate pass. D-010 vẫn chưa cho product build.
 
+Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên tiếp theo là `002`, bắt đầu bằng câu lệnh tự nhiên `triển khai tiếp phiên làm việc 002`.
+
 Role owner trong ledger phải được Delivery Lead thay bằng tên/account thật trong issue tracker trước khi mở non-document task. Không dùng tên giả trong tài liệu để tạo cảm giác đã có người phê duyệt.
 
 ## 2. Bảng công việc hiện tại

@@ -179,6 +179,8 @@ Một task chỉ là `Accepted/100%` khi người có authority chấp nhận. A
 
 Ngày snapshot: `2026-09-08`.
 
+Session control: `001 — Closed`; Git reference `session-001`; next session `002`. Registry: [docs/sessions/README.md](sessions/README.md).
+
 | WBS | Work packages | Authorized state | Status | Progress |
 |---|---:|---|---|---:|
 | Discovery/governance | D-001–D-023 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only | PMP Accepted; kickoff 90%; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — chưa baseline |
