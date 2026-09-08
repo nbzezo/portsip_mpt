@@ -44,7 +44,7 @@ Lệnh này chạy lần lượt:
 5. architecture dependency test trên source thật cùng allowed/forbidden fixtures;
 6. production build cho packages, API, worker và web.
 
-Kết quả hiện tại: PASS — 2 test files/2 tests, architecture source scan + allowed/forbidden fixtures PASS, 9 workspace projects build PASS; API smoke trả liveness `ok` và readiness `degraded` đúng thiết kế khi dependency chưa cấu hình.
+Kết quả hiện tại: PASS — same-host clean checkout tại `bf760f6` với `core.autocrlf=true`, frozen install, 2 test files/2 tests, architecture source scan + allowed/forbidden fixtures và 9 workspace projects build đều PASS; API smoke trả liveness `ok` và readiness `degraded` đúng thiết kế khi dependency chưa cấu hình. Independent clean-machine verification vẫn mở.
 
 ## 4. Chạy ứng dụng scaffold
 

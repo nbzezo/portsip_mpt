@@ -47,13 +47,14 @@
 | 2026-09-08 | Thử same-host clean-checkout replay tại commit `5f9130c` | Clone/toolchain/frozen lockfile policy đạt; install bị sandbox chặn registry (`EACCES`/`fetch failed`); escalation bị từ chối do thiếu explicit network authorization; temp clone đã xóa |
 | 2026-09-09 | Same-host clean replay sau khi user phê duyệt registry access | Frozen install PASS tại `9244e56`; `format:check` NOT PASS do clean checkout chuyển 55 source files sang CRLF; xác định thiếu repository line-ending policy |
 | 2026-09-09 | Thêm `.gitattributes` portability fix | `* text=auto eol=lf`; chờ full gate và clean-clone replay trên commit chứa fix |
+| 2026-09-09 | Clean-checkout replay tại `bf760f6` với `core.autocrlf=true` | PASS — LF policy, frozen install, clean tree, format/lint/typecheck, 2/2 tests, architecture fixtures và build; temp clone đã xóa |
 
 ## 6. Trạng thái work item
 
 | Work item | Trạng thái | Kết quả phiên 002 | Remaining |
 |---|---|---|---|
-| `G0-02` | Verification / 80% | Full gate replay PASS trên working checkout; same-host clean clone/lockfile preflight đạt | Approved registry access cho clean install + independent clean-machine replay/review |
-| `G0-03` | In Review / 90% | Build Profile tái hiện trên working checkout; clean replay record đã chuẩn bị | Independent clean-machine signature; same-host registry access chưa được authorize |
+| `G0-02` | Verification / 80% | Same-host clean checkout/frozen install/full gate PASS tại `bf760f6`; portability defect fixed | Independent clean-machine replay/review |
+| `G0-03` | In Review / 90% | Build Profile tái hiện từ clean checkout tại `bf760f6` | Independent clean-machine signature |
 | `G0-05` | In Review / 90% | Positive scan + negative fixtures theo toàn bộ acceptance hiện tại | Engineering Lead + Security acceptance; xác nhận path convention trước D-010 |
 | `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị | Named Telephony Owner gửi; vendor/customer response + Security/Architecture review |
 
