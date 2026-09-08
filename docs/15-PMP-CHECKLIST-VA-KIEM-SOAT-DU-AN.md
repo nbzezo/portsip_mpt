@@ -25,6 +25,7 @@ Nếu PMO nội bộ hoặc hợp đồng khách hàng có quy trình nghiêm h�
 | Theo dõi hằng ngày | [TASKS.md](../TASKS.md) | Active/Waiting/Done; cập nhật trong ngày khi trạng thái đổi |
 | Acceptance/quality evidence | [10](10-CHUAN-CODE-REVIEW-VA-DEFINITION-OF-DONE.md), [12](12-CHIEN-LUOC-TEST-DEBUG-VA-RUNBOOK.md), `docs/evidence/` | Không tính 100% nếu thiếu acceptance/evidence |
 | Exact build commands | `docs/BUILD-PROFILE.md` | Đã tồn tại và pass trên máy tạo; clean-machine verification còn mở |
+| Named role/authority | [Role Registry](ROLE-REGISTRY.md) | D-024 alias dùng cho code-delivery; independent review phải là execution tách biệt |
 
 Khi issue tracker chính thức được chọn, tracker là source of truth cho từng work item; `TASKS.md` chỉ là dashboard đồng bộ cho Active/Waiting/Done. PM phải ghi tracker URL, project key và đồng bộ owner trong tài liệu này. Không duy trì hai trạng thái khác nhau ở hai nơi.
 
@@ -32,7 +33,7 @@ Khi issue tracker chính thức được chọn, tracker là source of truth cho
 
 ### 3.1 Initiating — khởi tạo/ủy quyền
 
-- [ ] Sponsor, Project Manager và Product Owner có tên/account và authority rõ.
+- [x] Sponsor, Project Manager, Product Owner và technical/reviewer roles có named alias/authority theo D-024; external authority vẫn phải gắn account thật khi cần.
 - [ ] Project charter nêu business need, mục tiêu giá trị, high-level scope/non-goal, ROM, deadline constraint và success measures.
 - [ ] Stakeholder register có ảnh hưởng, mức quan tâm, nhu cầu thông tin, decision authority và escalation path.
 - [ ] Assumption/constraint log có owner, ngày cần xác minh và impact nếu sai.
@@ -55,7 +56,7 @@ Khi issue tracker chính thức được chọn, tracker là source of truth cho
 - [ ] Procurement plan có make/buy, SOW/SLA/support, license/redistribution, acceptance, lead time, exit/renewal và vendor escalation.
 - [ ] Stakeholder engagement plan có current/desired engagement, objections, adoption/training và feedback route.
 - [ ] Change-control process và configuration/document control được duyệt.
-- [ ] D-001–D-023 có owner/due/evidence; G0-01 → G0-02 → G0-03 → D-010 dependency không bị đảo.
+- [ ] D-001–D-024 có owner/due/evidence; G0-01 → G0-02 → G0-03 → D-010 dependency không bị đảo.
 
 **Exit:** baselines được duyệt hoặc ghi rõ chưa baseline; work item đầu tiên đạt Ready; mọi open gate có owner/due.
 
@@ -98,7 +99,7 @@ Khi issue tracker chính thức được chọn, tracker là source of truth cho
 
 | Domain PMBOK 8 | Portsip CC phải kiểm soát | Evidence tối thiểu |
 |---|---|---|
-| Governance | Authority, gates, decision rights, ethics/compliance, change control, value | Charter, D-010, D-001–D-023, gate minutes, change log |
+| Governance | Authority, gates, decision rights, ethics/compliance, change control, value | Charter, D-010, D-001–D-024, gate minutes, change log |
 | Scope | Product boundary, WBS, requirements traceability, acceptance, scope creep | Docs 01/02/13, RTM, signed acceptance |
 | Schedule | Dependency network, critical path, milestone, forecast, vendor lead time | Baseline schedule, milestone trend, blocker/decision aging |
 | Finance | Budget/funding, estimate basis, forecast, contingency/reserve, TCO/procurement | Cost baseline, actual/forecast, variance and approval |
@@ -183,7 +184,7 @@ Session control: `002 — In Progress`; base Git reference `session-001`. Regist
 
 | WBS | Work packages | Authorized state | Status | Progress |
 |---|---:|---|---|---:|
-| Discovery/governance | D-001–D-023 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only | PMP Accepted; kickoff 90%; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — chưa baseline |
+| Discovery/governance | D-001–D-024 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only | PMP + kickoff Accepted; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — chưa baseline |
 | Gate 0 | G0-01–G0-07 (7) | Discovery scaffold only; product build vẫn blocked | G0-01 Accepted; G0-02 80%; G0-03 90%; G0-05 90%; còn lại Blocked | Chưa baseline; báo theo status |
 | Epic A — Platform Kernel | 10 | Blocked by D-010 + Gate 0 | Not Started | 0% |
 | Epic B — Authorization | 12 | Blocked by D-010 + decisions | Not Started | 0% |
@@ -208,7 +209,7 @@ Current operational detail nằm ở [Current Work Ledger](14-CONG-VIEC-HIEN-TAI
 | Assumption | `ASM-nnn` | statement, evidence needed, owner, validation date, impact if false |
 | Dependency | `DEP-nnn` | provider/task, needed-by, commitment, health, owner, fallback |
 | Change request | `CR-nnn` | reason, scope/schedule/cost/quality/risk impact, options, approver, outcome, baseline updates |
-| Decision | D-001–D-023/ADR | question, options, outcome, approver, date, evidence, consequences |
+| Decision | D-001–D-024/ADR | question, options, outcome, approver, date, evidence, consequences |
 
 Proposed risk RAG: `1–7 Green`, `8–14 Amber`, `15–25 Red`; Security/Legal/Telephony hard-stop có thể Red bất kể score. Ngưỡng phải được Sponsor/PM phê duyệt.
 
@@ -242,7 +243,7 @@ Proposed risk RAG: `1–7 Green`, `8–14 Amber`, `15–25 Red`; Security/Legal/
 | Nhịp | Thành phần | Nội dung bắt buộc | Output |
 |---|---|---|---|
 | Hằng ngày | Delivery team | Done/today/blocker, task status/remaining, decision needed, safety impact | TASKS/tracker cập nhật |
-| 2 lần/tuần Discovery | Decision owners | D-001–D-023 evidence/aging, PoC result, vendor dependency | Decision/RAID updates |
+| 2 lần/tuần Discovery | Decision owners | D-001–D-024 evidence/aging, PoC result, vendor dependency | Decision/RAID updates |
 | Hằng tuần | PM + Leads + Product/Ops | Milestone trend, scope/cost/schedule/quality, RAID, change, capacity, 2-week look-ahead | Weekly status |
 | Mỗi sprint/increment | Team + stakeholders | Demo accepted outcome, defects, metrics, retro/actions | Acceptance + improvement actions |
 | Gate review | Sponsor/owners | Evidence pack, options, risk/TCO/forecast, Go/Adjust/Stop | Signed gate outcome |

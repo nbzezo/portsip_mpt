@@ -73,8 +73,8 @@ The PoC requires a non-production environment with:
 - allowlisted test destinations/numbers and explicit carrier limits;
 - least-privilege service accounts separated for read, call control and configuration mutation;
 - audit access for API, WSI, webhook, CDR and configuration changes;
-- a cleanup/expiry date and named owner;
-- an emergency stop/kill procedure owned by Telephony/Security.
+- a cleanup/expiry date owned by `Echo` and backed by an approved external account;
+- an emergency stop/kill procedure owned by `Echo` + `Sentinel`.
 
 Do not provide credentials in email/chat or this repository. Provide the approved secret-path reference and access procedure.
 

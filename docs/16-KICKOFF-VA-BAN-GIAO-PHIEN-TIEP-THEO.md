@@ -2,6 +2,8 @@
 
 Phiên này đã **Closed**. Hồ sơ tuần tự đầy đủ nằm tại [SESSION-001](sessions/SESSION-001.md); registry và cú pháp tiếp tục nằm tại [Sổ đăng ký phiên](sessions/README.md). Phiên tiếp theo là `002`.
 
+Đính chính phiên 002 ngày `2026-09-09`: D-024 đã thay vacancy bằng named Codex role aliases trong [Role Registry](ROLE-REGISTRY.md). Các mô tả vacancy dưới đây là snapshot lịch sử tại lúc đóng phiên 001.
+
 ## 1. Trạng thái tại thời điểm bàn giao
 
 Ngày `2026-09-08`, Project Owner đã yêu cầu bắt đầu ngay và tiếp tục triển khai bằng Codex. Discovery được khởi động; D-023 được chốt có điều kiện cho scaffold. Scaffold TypeScript modular monolith đã build/test pass. Chưa có real PortSIP sandbox/credential, Docker, CRM/IdP, carrier policy hoặc reviewer độc lập.

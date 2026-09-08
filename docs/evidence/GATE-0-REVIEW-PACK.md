@@ -82,7 +82,7 @@ No finding above may be silently removed. Reviewer records new findings with sev
 
 | Blocker | Owner needed | Effect |
 |---|---|---|
-| Named Security, Telephony and QA/Ops accounts absent | Project Owner | Prevents acceptance and any side-effect PoC |
+| Named aliases đã có nhưng separate reviewer execution chưa chạy | `Atlas` + `Sentinel` + `Forge` + `Beacon` | Prevents independent acceptance; see [Role Registry](../ROLE-REGISTRY.md) |
 | Exact PortSIP SDK/API/license/sandbox response absent | Telephony Owner + vendor | Blocks `D-002` and TEL/OUT/TRUNK PoCs |
 | Git remote, CI provider/definition and protected-branch policy absent | Engineering Lead + DevOps + QA | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
 | Docker/Podman/nerdctl and synthetic isolation policy absent | DevOps + Security + QA | Keeps `G0-06` and configuration thin slice blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |

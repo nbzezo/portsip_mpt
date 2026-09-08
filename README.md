@@ -39,6 +39,7 @@ Không để trình duyệt gọi PortSIP REST API bằng tài khoản quản tr
 - [Backlog khởi tạo và hướng dẫn phân công](docs/13-BACKLOG-KHOI-TAO-VA-PHAN-CONG.md)
 - [Current Work Ledger — việc được phép bắt đầu](docs/14-CONG-VIEC-HIEN-TAI.md)
 - [PMP-aligned checklist và kiểm soát dự án](docs/15-PMP-CHECKLIST-VA-KIEM-SOAT-DU-AN.md)
+- [Role Registry — đội ngũ delivery bằng Codex](docs/ROLE-REGISTRY.md)
 - [Kickoff và bàn giao phiên Codex tiếp theo](docs/16-KICKOFF-VA-BAN-GIAO-PHIEN-TIEP-THEO.md)
 - [Build Profile](docs/BUILD-PROFILE.md)
 - [ADR-001 — implementation stack](docs/adr/ADR-001-IMPLEMENTATION-STACK.md)

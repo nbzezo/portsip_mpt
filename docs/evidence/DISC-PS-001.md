@@ -27,4 +27,4 @@
 
 ## Next action
 
-Telephony owner dùng [exact contract/license/sandbox request](PORTSIP-EXACT-CONTRACT-REQUEST.md) để mở vendor ticket, đính kèm checklist D-002 trong `docs/04-DISCOVERY-POC.md`, rồi lưu trả lời/binary hash/order-form reference vào evidence store. Request hiện ở trạng thái `Prepared — not sent`; Codex không thay named Telephony Owner tạo external side effect. Không commit secret hoặc proprietary SDK binary vào repository.
+`Echo` dùng [exact contract/license/sandbox request](PORTSIP-EXACT-CONTRACT-REQUEST.md) để mở vendor ticket bằng approved external account, đính kèm checklist D-002 trong `docs/04-DISCOVERY-POC.md`, rồi lưu trả lời/binary hash/order-form reference vào evidence store. Request hiện ở trạng thái `Prepared — not sent`; alias không tự cấp quyền tạo external side effect hoặc thay vendor response. Không commit secret hoặc proprietary SDK binary vào repository.

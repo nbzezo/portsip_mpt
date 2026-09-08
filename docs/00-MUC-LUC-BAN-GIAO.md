@@ -38,6 +38,7 @@ Trạng thái dùng chung:
 | [Session registry](sessions/README.md) | Phiên tuần tự, trạng thái, Git tag và cú pháp tiếp tục | Tất cả/Codex | Delivery Lead | Mỗi lần mở/đóng phiên |
 | [Session 001](sessions/SESSION-001.md) | Snapshot, kiểm chứng, blocker và next action cuối phiên 001 | Người tiếp nhận/Codex | Delivery Lead | Immutable sau khi tag; đính chính ở phiên sau |
 | [TASKS.md](../TASKS.md) | Active/Waiting/Someday/Done hằng ngày | Tất cả | Project Manager/Delivery Lead | Cùng ngày khi task đổi trạng thái |
+| [Role Registry](ROLE-REGISTRY.md) | Named Codex role aliases, authority và separation-of-duties theo D-024 | Tất cả | Project Owner | Assignment/authority/review model đổi |
 | [AGENTS.md](../AGENTS.md) | Working agreement bắt buộc cho người/agent sửa repository | Contributor/automation | Engineering Lead | Gate/task-tracking/repo rule đổi |
 
 D-023 đã Approved có điều kiện cho Discovery scaffold; G0-02/G0-03 đã tạo scaffold và `docs/BUILD-PROFILE.md`. File này hiện là nguồn chuẩn cho exact tool versions và runnable commands, nhưng G0-03 vẫn chờ independent clean-machine review trước khi đạt 100%.
@@ -60,7 +61,7 @@ Nếu vẫn mâu thuẫn: dừng phần bị ảnh hưởng, tạo/ cập nhật
 1. README.
 2. Tóm tắt, roadmap, risk và go-live trong 01.
 3. P0/P1/P2 trong 02.
-4. D-001 đến D-023 trong 06.
+4. D-001 đến D-024 trong 06 và alias trách nhiệm trong Role Registry.
 5. Go/Adjust/Stop trong 04.
 6. PMP control snapshot và weekly status trong 15; Active/Waiting tại TASKS.
 

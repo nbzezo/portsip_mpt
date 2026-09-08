@@ -21,9 +21,8 @@ No remote call, provider mutation, container installation or external resource c
 
 ## G0-04 conclusion
 
-`G0-04` remains blocked. Before it can become `Ready`, Engineering Lead/DevOps/QA must provide:
+`G0-04` remains blocked. `Forge`, `Atlas` and `Beacon` are assigned under D-024, but before it can become `Ready` they must provide:
 
-- named assignee, accountable owner and required reviewer;
 - selected repository/CI provider and remote/project reference;
 - branch-protection/reviewer and artifact-retention requirements;
 - approved runner/secret model and dependency-cache policy;
@@ -33,9 +32,8 @@ Preparing a local YAML file without those decisions would not prove hosted CI or
 
 ## G0-06 conclusion
 
-`G0-06` remains blocked. Before it can become `Ready`, DevOps/Security/QA must provide:
+`G0-06` remains blocked. `Forge`, `Sentinel` and `Beacon` are assigned under D-024, but before it can become `Ready` they must provide:
 
-- named owners/reviewers;
 - approved Docker/Podman/container runtime and installation authority;
 - pinned PostgreSQL/Redis/fake IdP/fake PortSIP/fake CRM image or build policy;
 - network isolation, synthetic-only data and secret policy;

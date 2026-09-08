@@ -4,15 +4,15 @@
 
 Tài liệu này là hướng dẫn bàn giao để một developer mới, kể cả junior, có thể đi từ yêu cầu đến một vertical slice an toàn trong Portsip CC. Nó chuyển các nguyên tắc ở tài liệu kiến trúc thành cấu trúc thư mục, thứ tự thao tác, quy tắc code review và ví dụ code.
 
-Repository hiện vẫn ở giai đoạn Discovery/Solution Design, chưa có application scaffold. Vì vậy:
+Repository hiện vẫn ở giai đoạn Discovery/Solution Design. Discovery scaffold và Build Profile đã tồn tại theo D-023, nhưng D-010 chưa cho phép product build. Vì vậy:
 
-- cấu trúc và code TypeScript bên dưới là **reference implementation hypothesis**, chưa phải code production hay contract đã duyệt;
-- các snippet được viết theo hình dạng có thể biên dịch, nhưng import/package/version và bootstrap chỉ trở thành authoritative sau khi scaffold tồn tại;
+- cấu trúc và code TypeScript bên dưới là **reference implementation cho Discovery**, chưa phải code production hoặc exact vendor contract;
+- manifest, lockfile và `docs/BUILD-PROFILE.md` là nguồn authoritative cho import/package/version/bootstrap của scaffold; snippet còn lại chỉ minh họa trừ khi dẫn tới code thật;
 - không tự chọn phiên bản Node.js, package manager, framework, ORM, migration tool, validation library, test runner hoặc policy engine trong một ticket tính năng;
-- trước khi tạo scaffold, Architecture Owner phải phê duyệt **D-023 — Application stack và repository conventions** trong [Decision register](06-DECISION-REGISTER.md). D-023 hiện đã được đăng ký ở trạng thái `Open / Scaffold gate`, chưa phải quyết định `Approved`;
+- **D-023 — Application stack và repository conventions** đã `Approved for Discovery scaffold / conditional before D-010` trong [Decision register](06-DECISION-REGISTER.md); không tự nới điều kiện Security/DevOps/independent review;
 - exact PortSIP PBX/SBC/SDK/REST/WSI contract vẫn phải đi qua D-002 và Discovery/PoC; không code theo suy đoán từ snippet hoặc tài liệu version khác.
 
-Nếu D-023 hoặc contract liên quan chưa được duyệt, developer chỉ làm work item stack-neutral đã được [Current Work Ledger](14-CONG-VIEC-HIEN-TAI.md) đánh `Ready`. Work item đó có thể tạo domain/port/fixture/test bằng fake nếu owner ghi rõ là PoC artifact, nhưng không được tạo application scaffold, nối production credential, đoán vendor endpoint hoặc biến hypothesis thành dependency ngầm.
+Nếu decision hoặc exact contract liên quan chưa được duyệt, developer chỉ làm work item đã được [Current Work Ledger](14-CONG-VIEC-HIEN-TAI.md) đánh `Ready` trong phạm vi Discovery scaffold/PoC. Work item có thể tạo domain/port/fixture/test bằng fake nếu owner ghi rõ là PoC artifact, nhưng không được nối production credential, đoán vendor endpoint hoặc biến hypothesis thành dependency ngầm.
 
 ## 2. Thứ tự đọc và lộ trình onboarding
 

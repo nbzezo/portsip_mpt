@@ -1,23 +1,26 @@
 # Evidence — DISC-KO-001 Kickoff và phân vai
 
 - Actual start: `2026-09-08`
-- Status: `In Review / 90%`
+- Status: `Accepted / 100%`
 - Assignee: `Codex implementation agent`
 - Accountable: `Project owner/user`
 - Approval evidence: chỉ thị người dùng “Bắt đầu ngay” trong Codex task hiện tại
 
-## Owner tạm thời
+## Named role assignment
 
-| Vai trò | Account tạm thời | Authority hiện tại |
+| Vai trò | Alias/account | Authority hiện tại |
 |---|---|---|
-| Sponsor/Project Owner/Product Owner | User của Codex task hiện tại | Phê duyệt Discovery, scope/ưu tiên và D-010 |
-| PM/Delivery/Documentation | Codex implementation agent | Duy trì WBS/PMP/decision/evidence/handoff |
-| Engineering Lead/Solution Architecture | Codex implementation agent, interim | Scaffold/ADR/technical evidence; không tự ký Security/Telephony acceptance |
-| Security/Compliance | Vacancy — Project Owner cần bổ nhiệm | Hard gate trước real data/dial/trunk write/D-010 |
-| Telephony/Carrier | Vacancy — cần account PortSIP/carrier | Xác minh exact contract, license, trunk và call behavior |
-| DevOps/Ops/QA independent reviewer | Vacancy | Clean-machine, environment, release/readiness acceptance |
+| Sponsor/Project Owner/Product Owner | `Owner` — user của Codex task hiện tại | Phê duyệt Discovery, scope/ưu tiên, residual risk và D-010 |
+| PM/Delivery/Documentation | `Ledger` | Duy trì WBS/PMP/decision/evidence/handoff |
+| Engineering Lead/Solution Architecture | `Atlas` | Scaffold/ADR/contracts/technical evidence |
+| Security/Compliance | `Sentinel` | Hard gate cho auth, secret, PII, recording, outbound và D-010 |
+| Telephony/Carrier | `Echo` | Exact contract/license/sandbox, trunk và call behavior |
+| DevOps/Infrastructure/SRE | `Forge` | CI, runtime, environment, deployment/operations |
+| QA/Ops independent reviewer | `Beacon` | Clean replay, test/readiness acceptance ở execution tách biệt |
+| Product/Data/CRM/BA | `Compass` | Requirement, data/KPI/CRM và business acceptance prep |
+| Independent contributor/fresh reader | `Scout` | Clean replay, onboarding và handoff validation ở execution tách biệt |
 
-Không dùng tên người giả. Khi có thành viên thật, PM thay role vacancy bằng tên/account trong cùng ngày.
+Project Owner đã chỉ thị ngày `2026-09-09` rằng dự án được vận hành/code bằng Codex và cho phép tự đặt alias dễ nhớ. Alias không giả làm tên người thật; quy tắc identity, independent execution và authority nằm tại [Role Registry](../ROLE-REGISTRY.md) và D-024.
 
 ## Kickoff outcome
 
@@ -26,7 +29,8 @@ Không dùng tên người giả. Khi có thành viên thật, PM thay role vaca
 - Product build, real call và trunk mutation vẫn chờ D-010 cùng Security/Telephony evidence.
 - Repository là tracker tạm thời; `TASKS.md` là live board.
 
-## Acceptance còn thiếu
+## Acceptance
 
-- Project Owner xác nhận bảng owner hoặc cung cấp tên/account thay thế.
-- Bổ nhiệm tối thiểu Security/Compliance và Telephony reviewer trước sandbox call/trunk PoC.
+- Project Owner/user phê duyệt mô hình alias ngày `2026-09-09` qua chỉ thị “Bạn tự đặt tên đi... các vị trí trên đặt tên cho dễ nhớ là được”.
+- `DISC-KO-001` Accepted/100%; named assignment đã đủ cho planning/tracking.
+- External contract/runtime/sandbox và independent review evidence vẫn là dependency riêng; alias assignment không tự mở side-effect PoC hoặc D-010.

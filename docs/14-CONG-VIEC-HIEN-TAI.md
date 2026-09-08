@@ -8,29 +8,29 @@ Snapshot: `2026-09-08` — giai đoạn `Discovery / Solution Design`; Project O
 
 Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên `002` đang In Progress; hồ sơ tại [SESSION-002](sessions/SESSION-002.md).
 
-Role owner trong ledger phải được Delivery Lead thay bằng tên/account thật trong issue tracker trước khi mở non-document task. Không dùng tên giả trong tài liệu để tạo cảm giác đã có người phê duyệt.
+Named owner/reviewer dùng alias trong [Role Registry](ROLE-REGISTRY.md) theo D-024. Alias là project identity để điều phối code, không phải tên người thật hoặc bằng chứng phê duyệt; review độc lập vẫn phải chạy ở execution/task tách biệt và ghi evidence. Khi task cần vendor, legal, carrier, CI provider hoặc production authority, phải bổ sung account/reference thật trước khi mở external side effect.
 
 ## 2. Bảng công việc hiện tại
 
 | Work item | Status | Assignee | Accountable owner | Required reviewer | Due | Evidence |
 |---|---|---|---|---|---|---|
 | `DISC-PMP-001` — PMP control + live tracking | Accepted / 100% | Codex documentation maintainer | Project owner/user | Project owner/user | 2026-09-08 | [Evidence record](evidence/DISC-PMP-001.md) |
-| `DISC-KO-001` — kickoff + owner assignment | In Review / 90% | Codex implementation agent | Project owner/user | Project owner/user | 2026-09-09 | [Evidence record](evidence/DISC-KO-001.md) |
-| `DISC-PS-001` — PortSIP contract scan | Verification / 75% | Codex implementation agent | Telephony Owner — vacancy | Telephony + Security | Discovery Day 3 | [Evidence record](evidence/DISC-PS-001.md) |
-| `DISC-ARC-001` — extensible architecture baseline | In Review / 90% | Codex implementation agent | Project owner/user | Security + Product/Data + Operations | Discovery Day 5 | [Architecture evidence](evidence/DISC-ARC-001.md) |
-| `DISC-HO-001` — fresh-reader validation | **Ready / Discovery review** | Reviewer độc lập đầu tiên | Engineering Lead interim | Solution Architect + QA Lead | T+1 ngày làm việc từ lúc nhận repo | [Evidence record](evidence/DISC-HO-001.md) |
-| `G0-01` — Approve D-023 cho Discovery scaffold | Accepted / 100% | Codex implementation agent | Project owner/user | Security + DevOps review là điều kiện trước D-010 | 2026-09-08 | [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md) |
-| `G0-02` — monorepo scaffold | Verification / 80% | Codex implementation agent | Engineering Lead interim | Architecture + Security | 2026-09-09 | [Scaffold evidence](evidence/G0-002.md), [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md) |
-| `G0-03` — Build Profile | In Review / 90% | Codex implementation agent | Engineering Lead interim | Developer độc lập + DevOps | Discovery Day 5 | [Build Profile](BUILD-PROFILE.md), [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md); independent execution còn thiếu |
-| `G0-04` — CI baseline | Blocked by `G0-02`, owner/provider/remote absent | Chưa phân công | Engineering Lead + DevOps | QA Lead | Gate 0 | [Environment preflight](evidence/G0-004-G0-006-PREFLIGHT.md); CI artifacts + protected-branch evidence còn thiếu |
-| `G0-05` — architecture tests | In Review / 90%; source scan + allowed/forbidden fixtures PASS | Codex implementation agent | Solution Architect — interim | Engineering Lead + Security | Gate 0 | [Architecture-test evidence](evidence/G0-005.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md); independent review còn thiếu |
-| `G0-06` — synthetic environment | Blocked — Docker/Podman/nerdctl unavailable, owners vacant | Chưa phân công | DevOps + Engineering Lead | Security + QA | Gate 0 | [Environment preflight](evidence/G0-004-G0-006-PREFLIGHT.md); isolation evidence còn thiếu |
-| `G0-07` — contributor quick-start | Blocked by `G0-03–G0-06` | Junior khác người viết scaffold | Engineering Lead | QA Lead | Trước D-010 decision pack | Onboarding evidence theo 12 |
-| `POC-TEL-001` — inbound/event/CDR/recording | Blocked by D-002/sandbox/reviewers | Chưa phân công | Telephony Lead | Security + QA | Day 6 | PoC evidence pack theo 04 |
-| `POC-OUT-001` — preview/progressive 1:1 | Blocked by D-002/D-008/D-013/G0-06 | Chưa phân công | Product + Telephony | Compliance + QA | Day 8 | Golden attempt evidence theo 04/07 |
-| `POC-TRUNK-001` — trunk/DID/rule Admin | Blocked by D-011 exact contract/sandbox | Chưa phân công | Telephony Lead | Security + Ops | Day 8 | Draft/read-back/test/rollback evidence |
-| `POC-CONFIG-001` — auth/config/form/workflow | Blocked by G0-06/named reviewers | Chưa phân công | Solution Architect | Security + Product/Ops + QA | Day 9 | Thin-slice/version/migration/rollback evidence |
-| `D-010` — product build authorization | Pending Discovery/PoC evidence | Executive Sponsor | Executive Sponsor | Product + Architecture + Security + Telephony + QA/Ops | Discovery Day 10 | Signed Go/Adjust/Stop outcome + evidence pack |
+| `DISC-KO-001` — kickoff + owner assignment | Accepted / 100% | `Ledger` | `Owner`/Project owner user | `Owner`/Project owner user | 2026-09-09 | [Role Registry](ROLE-REGISTRY.md), [evidence record](evidence/DISC-KO-001.md) |
+| `DISC-PS-001` — PortSIP contract scan | Verification / 75% | `Ledger` | `Echo` | `Echo` + `Sentinel` + `Atlas` | Discovery Day 3 | [Evidence record](evidence/DISC-PS-001.md) |
+| `DISC-ARC-001` — extensible architecture baseline | In Review / 90% | `Atlas` | `Owner`/Project owner user | `Sentinel` + `Compass` + `Beacon` | Discovery Day 5 | [Architecture evidence](evidence/DISC-ARC-001.md) |
+| `DISC-HO-001` — fresh-reader validation | **Ready / Discovery review** | `Scout` separate execution | `Atlas` | `Atlas` + `Beacon` | T+1 ngày làm việc từ lúc nhận repo | [Evidence record](evidence/DISC-HO-001.md) |
+| `G0-01` — Approve D-023 cho Discovery scaffold | Accepted / 100% | `Atlas` | `Owner` | `Sentinel` + `Forge` review là điều kiện trước D-010 | 2026-09-08 | [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md) |
+| `G0-02` — monorepo scaffold | Verification / 80% | `Atlas` | `Atlas` | `Scout` + `Beacon` + `Sentinel` | 2026-09-09 | [Scaffold evidence](evidence/G0-002.md), [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md) |
+| `G0-03` — Build Profile | In Review / 90% | `Atlas` | `Atlas` | `Scout` + `Forge` | Discovery Day 5 | [Build Profile](BUILD-PROFILE.md), [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md); independent execution còn thiếu |
+| `G0-04` — CI baseline | Blocked by `G0-02`, provider/remote absent | `Forge` | `Forge` + `Atlas` | `Beacon` | Gate 0 | [Environment preflight](evidence/G0-004-G0-006-PREFLIGHT.md); CI artifacts + protected-branch evidence còn thiếu |
+| `G0-05` — architecture tests | In Review / 90%; source scan + allowed/forbidden fixtures PASS | `Atlas` | `Atlas` | `Sentinel` + `Beacon` | Gate 0 | [Architecture-test evidence](evidence/G0-005.md), [Gate 0 review pack](evidence/GATE-0-REVIEW-PACK.md); separate review còn thiếu |
+| `G0-06` — synthetic environment | Blocked — Docker/Podman/nerdctl unavailable | `Forge` | `Forge` | `Sentinel` + `Beacon` | Gate 0 | [Environment preflight](evidence/G0-004-G0-006-PREFLIGHT.md); isolation evidence còn thiếu |
+| `G0-07` — contributor quick-start | Blocked by `G0-03–G0-06` | `Scout` | `Atlas` | `Beacon` | Trước D-010 decision pack | Onboarding evidence theo 12 |
+| `POC-TEL-001` — inbound/event/CDR/recording | Blocked by D-002/sandbox | `Echo` | `Echo` | `Sentinel` + `Beacon` + `Atlas` | Day 6 | PoC evidence pack theo 04 |
+| `POC-OUT-001` — preview/progressive 1:1 | Blocked by D-002/D-008/D-013/G0-06 | `Echo` + `Compass` | `Compass` | `Sentinel` + `Beacon` | Day 8 | Golden attempt evidence theo 04/07 |
+| `POC-TRUNK-001` — trunk/DID/rule Admin | Blocked by D-011 exact contract/sandbox | `Echo` | `Echo` | `Sentinel` + `Beacon` | Day 8 | Draft/read-back/test/rollback evidence |
+| `POC-CONFIG-001` — auth/config/form/workflow | Blocked by G0-06 | `Atlas` | `Atlas` | `Sentinel` + `Compass` + `Beacon` | Day 9 | Thin-slice/version/migration/rollback evidence |
+| `D-010` — product build authorization | Pending Discovery/PoC evidence | `Owner` | `Owner` | `Compass` + `Atlas` + `Sentinel` + `Echo` + `Beacon` | Discovery Day 10 | Signed Go/Adjust/Stop outcome + evidence pack |
 
 Không tự đổi `Not Ready/Blocked` thành `Ready`. Accountable owner phải kiểm tra dependency, ghi named assignee/reviewer/due/evidence location và cập nhật Decision Register hoặc tracker trước.
 
@@ -60,9 +60,9 @@ Chứng minh một developer mới hiểu đúng phạm vi, gate, kiến trúc v
 ### 3.4 Inputs và reviewer
 
 - Inputs: README, docs 00–14 và trạng thái git của snapshot nhận bàn giao.
-- Assignee: developer đầu tiên nhận repo; ghi tên/account vào evidence trước khi bắt đầu.
-- Accountable: Engineering Lead.
-- Review: Solution Architect kiểm tra contract/boundary; QA Lead kiểm tra tính lặp lại và evidence.
+- Assignee: `Scout`, chạy ở execution/task tách biệt từ committed snapshot và ghi execution reference vào evidence trước khi bắt đầu.
+- Accountable: `Atlas`.
+- Review: `Atlas` kiểm tra contract/boundary; `Beacon` kiểm tra tính lặp lại và evidence ở execution review riêng.
 - Không có named reviewer: item chuyển `Blocked`, không tự duyệt kết quả của mình.
 
 ### 3.5 Acceptance questions
@@ -90,4 +90,4 @@ Người thực hiện phải trả lời đúng và dẫn link:
 
 ## 4. Sau khi `DISC-HO-001` pass
 
-Engineering Lead mới lên lịch G0-01, gắn tên approver và evidence store thật. `DISC-HO-001` pass chỉ chứng minh tài liệu Discovery đọc được; nó **không** Approve D-023, D-010, PortSIP contract hay product build. Khi issue tracker được chọn, migrate ledger bằng stable work-item IDs, thêm tracker URL vào đây và giữ file này làm landing page trạng thái.
+`Atlas` chỉ đóng `DISC-HO-001` sau khi `Scout` và `Beacon` có evidence tách biệt. Item pass chỉ chứng minh tài liệu Discovery đọc được; nó **không** Approve D-023, D-010, PortSIP contract hay product build. Khi issue tracker được chọn, migrate ledger bằng stable work-item IDs, thêm tracker URL vào đây và giữ file này làm landing page trạng thái.
