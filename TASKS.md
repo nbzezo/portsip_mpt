@@ -30,8 +30,10 @@
 
 ## Waiting On
 
-- [ ] **G0-04 — CI baseline** - Blocked/0%; waiting on G0-02 since 2026-09-08; owner Engineering Lead/DevOps; target Gate 0
-- [ ] **G0-06 — Local/CI synthetic environment** - Blocked/0%; Docker unavailable and DevOps/Security owners vacant since 2026-09-08; target Gate 0
+- [ ] **G0-04 — CI baseline** - Blocked/0%; waiting since 2026-09-08 on G0-02 independent acceptance, named DevOps/QA and repository/CI provider; local preflight 2026-09-09 found no Git remote or CI definition; owner Engineering Lead/DevOps; escalation 2026-09-10; target Gate 0
+  - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`
+- [ ] **G0-06 — Local/CI synthetic environment** - Blocked/0%; waiting since 2026-09-08 on approved runtime plus named DevOps/Security/QA; local preflight 2026-09-09 found no Docker, Podman or nerdctl; escalation 2026-09-10; target Gate 0
+  - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`
 - [ ] **POC-TEL-001 — Inbound + event/CDR/recording PoC** - Blocked/0%; waiting on D-002 exact sandbox/SDK/API and named Telephony/Security reviewers since 2026-09-08; target Day 6
 - [ ] **POC-OUT-001 — Preview/progressive 1:1 outbound PoC** - Blocked/0%; waiting on D-002, D-008/D-013 compliance/carrier inputs and synthetic environment since 2026-09-08; target Day 8
 - [ ] **POC-TRUNK-001 — SIP trunk/DID/rule Admin PoC** - Blocked/0%; waiting on exact endpoint/role/ownership matrix and approved isolated sandbox since 2026-09-08; target Day 8

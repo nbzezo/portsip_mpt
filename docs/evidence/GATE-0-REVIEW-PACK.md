@@ -84,8 +84,8 @@ No finding above may be silently removed. Reviewer records new findings with sev
 |---|---|---|
 | Named Security, Telephony and QA/Ops accounts absent | Project Owner | Prevents acceptance and any side-effect PoC |
 | Exact PortSIP SDK/API/license/sandbox response absent | Telephony Owner + vendor | Blocks `D-002` and TEL/OUT/TRUNK PoCs |
-| CI provider/protected-branch policy absent | Engineering Lead + DevOps + QA | Keeps `G0-04` blocked |
-| Docker/container runtime and synthetic isolation policy absent | DevOps + Security + QA | Keeps `G0-06` and configuration thin slice blocked |
+| Git remote, CI provider/definition and protected-branch policy absent | Engineering Lead + DevOps + QA | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
+| Docker/Podman/nerdctl and synthetic isolation policy absent | DevOps + Security + QA | Keeps `G0-06` and configuration thin slice blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
 | Independent junior/fresh reader absent | Engineering Lead + QA | Keeps `DISC-HO-001`/`G0-07` unaccepted |
 
 ## 8. Sign-off record
