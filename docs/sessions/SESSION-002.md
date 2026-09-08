@@ -48,6 +48,7 @@
 | 2026-09-09 | Same-host clean replay sau khi user phê duyệt registry access | Frozen install PASS tại `9244e56`; `format:check` NOT PASS do clean checkout chuyển 55 source files sang CRLF; xác định thiếu repository line-ending policy |
 | 2026-09-09 | Thêm `.gitattributes` portability fix | `* text=auto eol=lf`; chờ full gate và clean-clone replay trên commit chứa fix |
 | 2026-09-09 | Clean-checkout replay tại `bf760f6` với `core.autocrlf=true` | PASS — LF policy, frozen install, clean tree, format/lint/typecheck, 2/2 tests, architecture fixtures và build; temp clone đã xóa |
+| 2026-09-09 | Chuẩn bị Gate 0 reviewer pack | `docs/evidence/GATE-0-REVIEW-PACK.md`; tổng hợp G0-02/G0-03/G0-05 evidence, reviewer focus, blockers và sign-off record |
 
 ## 6. Trạng thái work item
 

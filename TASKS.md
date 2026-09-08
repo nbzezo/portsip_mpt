@@ -15,15 +15,15 @@
 - [ ] **G0-02 — Discovery monorepo scaffold** - Verification/80%; actual start 2026-09-08; assignee Codex; accountable Engineering Lead interim; due 2026-09-09
   - Same-host clean checkout tại `bf760f6` với `core.autocrlf=true`, frozen install và full gate PASS; line-ending portability defect đã sửa bằng `.gitattributes`.
   - Remaining: independent clean-machine replay/review; next action owner Engineering Lead, due 2026-09-10.
-  - Evidence: `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`
+  - Evidence: `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`, `docs/evidence/GATE-0-REVIEW-PACK.md`
 - [ ] **G0-03 — Build Profile** - In Review/90%; actual start 2026-09-08; assignee Codex; accountable Engineering Lead interim; due Discovery Day 5
   - Remaining: người không viết scaffold chạy lại template trên máy sạch và ký evidence.
   - Same-host clean-checkout replay PASS tại `bf760f6`; không tính là independent signature.
-  - Evidence: `docs/BUILD-PROFILE.md`, `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`
+  - Evidence: `docs/BUILD-PROFILE.md`, `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`, `docs/evidence/GATE-0-REVIEW-PACK.md`
 - [ ] **G0-05 — Architecture dependency tests** - In Review/90%; actual start 2026-09-08; assignee Codex; accountable Solution Architect interim; required reviewers Engineering Lead + Security; due Gate 0
   - Source scan cùng allowed/forbidden fixtures cho public contract, owned DTO, shared primitive, NestJS/package, PortSIP browser SDK, cross-module internal/repository, shared ORM/persistence và vendor DTO leak đều PASS trong session 002.
   - Remaining: independent rule-coverage/security review và xác nhận path convention trước D-010.
-  - Evidence: `docs/evidence/G0-005.md`
+  - Evidence: `docs/evidence/G0-005.md`, `docs/evidence/GATE-0-REVIEW-PACK.md`
 - [ ] **DISC-HO-001 — Fresh-reader validation** - Ready/0%; Discovery docs-only; assignee reviewer độc lập đầu tiên; Engineering Lead accountable; Solution Architect + QA Lead review; due T+1 ngày làm việc từ lúc nhận repo
   - Evidence: `docs/evidence/DISC-HO-001.md`
   - Không dùng credential hoặc gọi vendor/production; review scaffold bằng Build Profile.
