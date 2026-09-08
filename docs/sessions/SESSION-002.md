@@ -44,13 +44,14 @@
 | 2026-09-08 | Mở rộng `G0-05` theo đầy đủ acceptance Gate 0 | Thêm negative fixtures cho cross-module repository/internal import, shared ORM/persistence và vendor DTO leak |
 | 2026-09-08 | Bổ sung positive architecture fixtures | Chứng minh public contract, owned DTO, shared primitive và web telephony wrapper hợp lệ không bị chặn nhầm |
 | 2026-09-08 | Chuẩn bị independent clean-machine review record cho `G0-02/G0-03` | `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`; chưa thực thi/ký bởi reviewer độc lập |
+| 2026-09-08 | Thử same-host clean-checkout replay tại commit `5f9130c` | Clone/toolchain/frozen lockfile policy đạt; install bị sandbox chặn registry (`EACCES`/`fetch failed`); escalation bị từ chối do thiếu explicit network authorization; temp clone đã xóa |
 
 ## 6. Trạng thái work item
 
 | Work item | Trạng thái | Kết quả phiên 002 | Remaining |
 |---|---|---|---|
-| `G0-02` | Verification / 80% | Full gate replay PASS trên host hiện tại | Independent clean-machine replay/review |
-| `G0-03` | In Review / 90% | Build Profile tiếp tục tái hiện được | Independent clean-machine signature |
+| `G0-02` | Verification / 80% | Full gate replay PASS trên working checkout; same-host clean clone/lockfile preflight đạt | Approved registry access cho clean install + independent clean-machine replay/review |
+| `G0-03` | In Review / 90% | Build Profile tái hiện trên working checkout; clean replay record đã chuẩn bị | Independent clean-machine signature; same-host registry access chưa được authorize |
 | `G0-05` | In Review / 90% | Positive scan + negative fixtures theo toàn bộ acceptance hiện tại | Engineering Lead + Security acceptance; xác nhận path convention trước D-010 |
 | `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị | Named Telephony Owner gửi; vendor/customer response + Security/Architecture review |
 

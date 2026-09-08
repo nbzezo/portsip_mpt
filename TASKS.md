@@ -14,9 +14,11 @@
   - Evidence: `docs/evidence/DISC-ARC-001.md`, `docs/08-KIEN-TRUC-MO-RONG-PHAN-QUYEN-CAU-HINH-DONG.md`
 - [ ] **G0-02 — Discovery monorepo scaffold** - Verification/80%; actual start 2026-09-08; assignee Codex; accountable Engineering Lead interim; due 2026-09-09
   - `pnpm run check` PASS; clean-machine execution template đã chuẩn bị; remaining independent review/replay.
+  - Blocker: clean-checkout install cùng host cần approved npm-registry access; waiting since 2026-09-08. Owner: Project Owner/Security hoặc independent reviewer có approved environment; next escalation 2026-09-09.
   - Evidence: `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`
 - [ ] **G0-03 — Build Profile** - In Review/90%; actual start 2026-09-08; assignee Codex; accountable Engineering Lead interim; due Discovery Day 5
   - Remaining: người không viết scaffold chạy lại template trên máy sạch và ký evidence.
+  - Same-host clean checkout đã clone/verify lockfile nhưng registry download bị sandbox chặn; không tính là independent PASS.
   - Evidence: `docs/BUILD-PROFILE.md`, `docs/evidence/G0-002.md`, `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`
 - [ ] **G0-05 — Architecture dependency tests** - In Review/90%; actual start 2026-09-08; assignee Codex; accountable Solution Architect interim; required reviewers Engineering Lead + Security; due Gate 0
   - Source scan cùng allowed/forbidden fixtures cho public contract, owned DTO, shared primitive, NestJS/package, PortSIP browser SDK, cross-module internal/repository, shared ORM/persistence và vendor DTO leak đều PASS trong session 002.
