@@ -45,6 +45,8 @@
 | 2026-09-08 | Bổ sung positive architecture fixtures | Chứng minh public contract, owned DTO, shared primitive và web telephony wrapper hợp lệ không bị chặn nhầm |
 | 2026-09-08 | Chuẩn bị independent clean-machine review record cho `G0-02/G0-03` | `docs/evidence/G0-CLEAN-MACHINE-REVIEW.md`; chưa thực thi/ký bởi reviewer độc lập |
 | 2026-09-08 | Thử same-host clean-checkout replay tại commit `5f9130c` | Clone/toolchain/frozen lockfile policy đạt; install bị sandbox chặn registry (`EACCES`/`fetch failed`); escalation bị từ chối do thiếu explicit network authorization; temp clone đã xóa |
+| 2026-09-09 | Same-host clean replay sau khi user phê duyệt registry access | Frozen install PASS tại `9244e56`; `format:check` NOT PASS do clean checkout chuyển 55 source files sang CRLF; xác định thiếu repository line-ending policy |
+| 2026-09-09 | Thêm `.gitattributes` portability fix | `* text=auto eol=lf`; chờ full gate và clean-clone replay trên commit chứa fix |
 
 ## 6. Trạng thái work item
 

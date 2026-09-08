@@ -7,6 +7,7 @@
 - Node.js `>=24.15.0 <25`.
 - pnpm `11.19.0` qua Corepack hoặc binary tương đương.
 - Git.
+- Git checkout phải áp dụng `.gitattributes`; source text được chuẩn hóa `LF` trên mọi OS để `format:check` tái hiện được.
 - Docker/Podman chỉ cần từ G0-06; host hiện tại chưa có Docker.
 - Không cần PortSIP, CRM, IdP hoặc Production credential để chạy quality gate.
 
@@ -68,6 +69,7 @@ Không tự chạy `playwright install`, Docker image, migration hay seed trư�
 
 - Node ngoài range: cài Node 24 LTS rồi chạy lại install.
 - Lockfile mismatch: không xóa lockfile; kiểm tra manifest change và chạy `pnpm install` có review.
+- Clean checkout báo hàng loạt Prettier diff trên Windows: xác nhận checkout chứa `.gitattributes` và file text dùng `LF`; không chạy format hàng loạt để che lỗi line-ending policy.
 - `ERR_PNPM_IGNORED_BUILDS`: kiểm tra `allowBuilds`; không approve package lạ.
 - Architecture test fail: sửa dependency direction, không thêm exception chung.
 - Readiness degraded: đúng kỳ vọng của scaffold nếu PostgreSQL/Redis/PortSIP chưa cấu hình.
