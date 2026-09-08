@@ -1,8 +1,8 @@
 # PortSIP exact contract, license and sandbox evidence request
 
-Status: **Prepared — not sent**  
-Owner to send: named Telephony Owner  
-Required reviewers: Security + Architecture  
+- Status: **Prepared — not sent**
+- Owner to send: named Telephony Owner
+- Required reviewers: Security + Architecture
 Decision/work item: `D-002` / `DISC-PS-001`
 
 ## 1. Purpose
