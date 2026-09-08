@@ -51,6 +51,7 @@
 | 2026-09-09 | Chuẩn bị Gate 0 reviewer pack | `docs/evidence/GATE-0-REVIEW-PACK.md`; tổng hợp G0-02/G0-03/G0-05 evidence, reviewer focus, blockers và sign-off record |
 | 2026-09-09 | Read-only preflight cho `G0-04/G0-06` | Xác nhận không có Git remote/CI definition/CI marker và không có Docker/Podman/nerdctl; items giữ `Blocked / 0%`; `docs/evidence/G0-004-G0-006-PREFLIGHT.md` |
 | 2026-09-09 | Project Owner phê duyệt named Codex role aliases | D-024 + `docs/ROLE-REGISTRY.md`; `DISC-KO-001` Accepted/100%; independent review vẫn cần execution tách biệt |
+| 2026-09-09 | Chạy lại full quality gate trên HEAD `75e2880` sau đồng bộ tài liệu | PASS — format/lint/typecheck, 2/2 tests, architecture source + fixtures và build; xác nhận không hồi quy, không thay independent acceptance |
 
 ## 6. Trạng thái work item
 
