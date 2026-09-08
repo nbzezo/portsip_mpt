@@ -4,7 +4,7 @@
 
 Ledger này trả lời câu hỏi đầu tiên của người tiếp nhận: **“Tôi được làm việc nào ngay bây giờ?”** Đây là nguồn chuẩn cho authorization/dependency của work item tới khi issue tracker chính thức được chọn và liên kết trong D-010. Chỉ item có `Status = Ready`, assignee rõ và đủ Definition of Ready mới được bắt đầu. Sau khi activate, trạng thái hằng ngày nằm ở [TASKS.md](../TASKS.md); quy tắc progress/acceptance/reporting nằm ở [PMP control checklist](15-PMP-CHECKLIST-VA-KIEM-SOAT-DU-AN.md).
 
-Snapshot: `2026-09-08` — giai đoạn `Discovery / Solution Design`; Project Owner đã khởi động Discovery. D-023 đã Approved có điều kiện cho Discovery scaffold; scaffold và Build Profile đã có, quality gate pass. D-010 vẫn chưa cho product build.
+Snapshot: `2026-09-09` — giai đoạn `Discovery / Solution Design`; Project Owner đã khởi động Discovery. D-023 đã Approved có điều kiện cho Discovery scaffold; scaffold và Build Profile đã có, quality gate pass. D-010 vẫn chưa cho product build.
 
 Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên `002` đang In Progress; hồ sơ tại [SESSION-002](sessions/SESSION-002.md).
 
@@ -85,7 +85,7 @@ Người thực hiện phải trả lời đúng và dẫn link:
 - [ ] Chín câu trả lời có source link; không dùng “theo em nghĩ”.
 - [ ] Link, fence, table và canonical-name checks có kết quả tái lập được.
 - [ ] Mọi P0/P1 đã sửa và re-test, hoặc có explicit owner/due/blocker; không đánh `PASS` khi còn P0/P1.
-- [ ] Solution Architect và QA Lead ký review; Engineering Lead đóng item.
+- [ ] `Atlas` và `Beacon` ký review ở execution tách biệt; `Atlas` đóng item sau khi acceptance đạt.
 - [ ] Không có scaffold/dependency/credential/vendor/production side effect phát sinh.
 
 ## 4. Sau khi `DISC-HO-001` pass

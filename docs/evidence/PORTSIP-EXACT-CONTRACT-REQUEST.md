@@ -1,7 +1,7 @@
 # PortSIP exact contract, license and sandbox evidence request
 
 - Status: **Prepared — not sent**
-- Owner to send: named Telephony Owner
+- Owner to send: `Echo` using an approved external account
 - Required reviewers: Security + Architecture
 Decision/work item: `D-002` / `DISC-PS-001`
 
@@ -91,7 +91,7 @@ Please give a written `Supported`, `Unsupported` or `Supported with constraints`
 
 ## 8. Evidence intake checklist
 
-On receipt, the Telephony Owner records:
+On receipt, `Echo` records:
 
 ```text
 Vendor case/reference:

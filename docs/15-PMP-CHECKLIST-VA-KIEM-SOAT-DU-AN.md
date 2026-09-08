@@ -178,7 +178,7 @@ Một task chỉ là `Accepted/100%` khi người có authority chấp nhận. A
 
 ## 6. Current project control snapshot
 
-Ngày snapshot: `2026-09-08`.
+Ngày snapshot: `2026-09-09`.
 
 Session control: `002 — In Progress`; base Git reference `session-001`. Registry: [docs/sessions/README.md](sessions/README.md).
 

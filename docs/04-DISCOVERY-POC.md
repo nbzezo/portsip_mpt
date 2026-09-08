@@ -2,7 +2,7 @@
 
 Kickoff `2026-09-08`: Discovery đã bắt đầu. Public PortSIP scan nằm tại [DISC-PS-001](evidence/DISC-PS-001.md); D-023/stack tại [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md); scaffold/build evidence tại [G0-002](evidence/G0-002.md). Các checkbox đòi exact customer license, sandbox hoặc real behavior vẫn để mở.
 
-Yêu cầu vendor/customer artifact đã được chuẩn bị tại [PortSIP exact contract, license and sandbox evidence request](evidence/PORTSIP-EXACT-CONTRACT-REQUEST.md), trạng thái `Prepared — not sent`. Chỉ named Telephony Owner mới gửi và tiếp nhận restricted evidence theo Security review.
+Yêu cầu vendor/customer artifact đã được chuẩn bị tại [PortSIP exact contract, license and sandbox evidence request](evidence/PORTSIP-EXACT-CONTRACT-REQUEST.md), trạng thái `Prepared — not sent`. Chỉ `Echo` dùng approved external account mới gửi và tiếp nhận restricted evidence theo `Sentinel` review.
 
 ## 1. Thông tin cần chốt với nghiệp vụ
 
