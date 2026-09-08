@@ -1,0 +1,9 @@
+dashboard.html
+AGENTS.md
+README.md
+TASKS.md
+docs/**/*.md
+node_modules
+dist
+coverage
+pnpm-lock.yaml
