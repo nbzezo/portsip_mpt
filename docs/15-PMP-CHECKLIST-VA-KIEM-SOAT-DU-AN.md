@@ -179,12 +179,12 @@ Một task chỉ là `Accepted/100%` khi người có authority chấp nhận. A
 
 Ngày snapshot: `2026-09-08`.
 
-Session control: `001 — Closed`; Git reference `session-001`; next session `002`. Registry: [docs/sessions/README.md](sessions/README.md).
+Session control: `002 — In Progress`; base Git reference `session-001`. Registry: [docs/sessions/README.md](sessions/README.md).
 
 | WBS | Work packages | Authorized state | Status | Progress |
 |---|---:|---|---|---:|
 | Discovery/governance | D-001–D-023 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only | PMP Accepted; kickoff 90%; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — chưa baseline |
-| Gate 0 | G0-01–G0-07 (7) | Discovery scaffold only; product build vẫn blocked | G0-01 Accepted; G0-02 80%; G0-03 90%; G0-05 80%; còn lại Blocked | Chưa baseline; báo theo status |
+| Gate 0 | G0-01–G0-07 (7) | Discovery scaffold only; product build vẫn blocked | G0-01 Accepted; G0-02 80%; G0-03 90%; G0-05 90%; còn lại Blocked | Chưa baseline; báo theo status |
 | Epic A — Platform Kernel | 10 | Blocked by D-010 + Gate 0 | Not Started | 0% |
 | Epic B — Authorization | 12 | Blocked by D-010 + decisions | Not Started | 0% |
 | Epic C — Config/form/workflow | 14 | Blocked by D-010 + decisions | Not Started | 0% |

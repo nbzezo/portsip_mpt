@@ -6,7 +6,7 @@ Ledger này trả lời câu hỏi đầu tiên của người tiếp nhận: **
 
 Snapshot: `2026-09-08` — giai đoạn `Discovery / Solution Design`; Project Owner đã khởi động Discovery. D-023 đã Approved có điều kiện cho Discovery scaffold; scaffold và Build Profile đã có, quality gate pass. D-010 vẫn chưa cho product build.
 
-Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên tiếp theo là `002`, bắt đầu bằng câu lệnh tự nhiên `triển khai tiếp phiên làm việc 002`.
+Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên `002` đang In Progress; hồ sơ tại [SESSION-002](sessions/SESSION-002.md).
 
 Role owner trong ledger phải được Delivery Lead thay bằng tên/account thật trong issue tracker trước khi mở non-document task. Không dùng tên giả trong tài liệu để tạo cảm giác đã có người phê duyệt.
 
@@ -20,10 +20,10 @@ Role owner trong ledger phải được Delivery Lead thay bằng tên/account t
 | `DISC-ARC-001` — extensible architecture baseline | In Review / 90% | Codex implementation agent | Project owner/user | Security + Product/Data + Operations | Discovery Day 5 | [Architecture evidence](evidence/DISC-ARC-001.md) |
 | `DISC-HO-001` — fresh-reader validation | **Ready / Discovery review** | Reviewer độc lập đầu tiên | Engineering Lead interim | Solution Architect + QA Lead | T+1 ngày làm việc từ lúc nhận repo | [Evidence record](evidence/DISC-HO-001.md) |
 | `G0-01` — Approve D-023 cho Discovery scaffold | Accepted / 100% | Codex implementation agent | Project owner/user | Security + DevOps review là điều kiện trước D-010 | 2026-09-08 | [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md) |
-| `G0-02` — monorepo scaffold | Verification / 80% | Codex implementation agent | Engineering Lead interim | Architecture + Security | 2026-09-09 | [Scaffold evidence](evidence/G0-002.md) |
-| `G0-03` — Build Profile | In Review / 90% | Codex implementation agent | Engineering Lead interim | Developer độc lập + DevOps | Discovery Day 5 | [Build Profile](BUILD-PROFILE.md) + clean-machine record còn thiếu |
+| `G0-02` — monorepo scaffold | Verification / 80% | Codex implementation agent | Engineering Lead interim | Architecture + Security | 2026-09-09 | [Scaffold evidence](evidence/G0-002.md) + [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md) |
+| `G0-03` — Build Profile | In Review / 90% | Codex implementation agent | Engineering Lead interim | Developer độc lập + DevOps | Discovery Day 5 | [Build Profile](BUILD-PROFILE.md) + [clean-machine template](evidence/G0-CLEAN-MACHINE-REVIEW.md); execution còn thiếu |
 | `G0-04` — CI baseline | Blocked by `G0-02` | Chưa phân công | Engineering Lead + DevOps | QA Lead | Gate 0 | CI artifacts + protected-branch evidence |
-| `G0-05` — architecture tests | Verification / 80%; initial rule PASS | Codex implementation agent | Solution Architect — interim | Engineering Lead + Security | Gate 0 | [Scaffold evidence](evidence/G0-002.md); negative fixture review còn thiếu |
+| `G0-05` — architecture tests | In Review / 90%; source scan + allowed/forbidden fixtures PASS | Codex implementation agent | Solution Architect — interim | Engineering Lead + Security | Gate 0 | [Architecture-test evidence](evidence/G0-005.md); independent review còn thiếu |
 | `G0-06` — synthetic environment | Blocked — Docker unavailable, owners vacant | Chưa phân công | DevOps + Engineering Lead | Security + QA | Gate 0 | Local/CI environment isolation evidence |
 | `G0-07` — contributor quick-start | Blocked by `G0-03–G0-06` | Junior khác người viết scaffold | Engineering Lead | QA Lead | Trước D-010 decision pack | Onboarding evidence theo 12 |
 | `POC-TEL-001` — inbound/event/CDR/recording | Blocked by D-002/sandbox/reviewers | Chưa phân công | Telephony Lead | Security + QA | Day 6 | PoC evidence pack theo 04 |

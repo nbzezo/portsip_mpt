@@ -3,7 +3,14 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["**/dist/**", "**/coverage/**", "dashboard.html"] },
+  {
+    ignores: [
+      "**/dist/**",
+      "**/coverage/**",
+      "tests/architecture/fixtures/**",
+      "dashboard.html",
+    ],
+  },
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {

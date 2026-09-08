@@ -18,7 +18,7 @@
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm run test:unit && pnpm run test:architecture",
     "test:unit": "vitest run",
-    "test:architecture": "node scripts/check-architecture.mjs",
+    "test:architecture": "node scripts/check-architecture.mjs && node scripts/check-architecture-fixtures.mjs",
     "test:e2e": "playwright test",
     "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build"
   },

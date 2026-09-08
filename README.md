@@ -6,7 +6,7 @@ Kho lưu trữ kế hoạch cho dự án Contact Center sử dụng PortSIP PBX 
 
 - Giai đoạn: Discovery / Solution Design
 - Phiên bản kế hoạch/bàn giao: `0.7`
-- Phiên làm việc gần nhất: `001 — Closed`; tiếp tục bằng `triển khai tiếp phiên làm việc 002`
+- Phiên làm việc hiện tại: `002 — In Progress`; base `session-001`
 - Ngày khởi tạo: `2026-09-07`
 - Baseline để ước lượng: web-first, một tenant, một CRM connector, kênh voice blended inbound + outbound; outbound gồm manual/click-to-call, preview campaign và progressive 1:1
 - Phiên bản ứng viên tại ngày khảo sát: PBX `v22.6.3` + SBC `v11.2.8`; exact PBX/SBC/SDK contract phải được khóa sau PoC vì tài liệu REST công khai mới nhất đang ở `v22.3`
@@ -44,6 +44,7 @@ Không để trình duyệt gọi PortSIP REST API bằng tài khoản quản tr
 - [ADR-001 — implementation stack](docs/adr/ADR-001-IMPLEMENTATION-STACK.md)
 - [Sổ đăng ký phiên làm việc](docs/sessions/README.md)
 - [Hồ sơ đóng phiên 001](docs/sessions/SESSION-001.md)
+- [Hồ sơ phiên 002](docs/sessions/SESSION-002.md)
 
 Theo dõi hằng ngày tại [TASKS.md](TASKS.md); xem dạng bảng qua [dashboard.html](dashboard.html). Mọi item trong backlog chưa xuất hiện ở live board mặc định là `Not Started / 0%`; chỉ tính `100%` khi acceptance và evidence đã được approver xác nhận.
 

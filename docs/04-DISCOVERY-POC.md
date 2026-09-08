@@ -2,6 +2,8 @@
 
 Kickoff `2026-09-08`: Discovery đã bắt đầu. Public PortSIP scan nằm tại [DISC-PS-001](evidence/DISC-PS-001.md); D-023/stack tại [ADR-001](adr/ADR-001-IMPLEMENTATION-STACK.md); scaffold/build evidence tại [G0-002](evidence/G0-002.md). Các checkbox đòi exact customer license, sandbox hoặc real behavior vẫn để mở.
 
+Yêu cầu vendor/customer artifact đã được chuẩn bị tại [PortSIP exact contract, license and sandbox evidence request](evidence/PORTSIP-EXACT-CONTRACT-REQUEST.md), trạng thái `Prepared — not sent`. Chỉ named Telephony Owner mới gửi và tiếp nhận restricted evidence theo Security review.
+
 ## 1. Thông tin cần chốt với nghiệp vụ
 
 Baseline đang dùng để estimate là **single-tenant, web-first, một CRM connector, voice blended inbound + outbound và P0 extensibility kernel + bounded self-service** theo [blueprint mở rộng](08-KIEN-TRUC-MO-RONG-PHAN-QUYEN-CAU-HINH-DONG.md). P0 outbound gồm manual, preview và progressive 1:1. ROM tương ứng là `28–32 tuần ±30%`; phương án tăng tốc `26–29 tuần ±30%`. `24–26 tuần` chỉ là phương án Adjust khi self-service form/workflow builders chuyển P1. Native, commercial multi-tenant, digital, advanced dialer hoặc full low-code/plugin runtime đều kích hoạt re-scope/re-estimate.
