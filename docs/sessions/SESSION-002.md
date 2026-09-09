@@ -55,6 +55,7 @@
 | 2026-09-09 | Clean-checkout replay trên HEAD `ca0e468` với registry access được ủy quyền | PASS — `core.autocrlf=true`, frozen install 261 packages, full gate, clean replay tree và cleanup; vẫn là implementation evidence |
 | 2026-09-09 | Project Owner chọn hướng `Adjust` cho D-010 | Giữ kernel/authorization/voice P0 và role/config templates; chuyển visual/self-service builders sang P1; product build vẫn conditional; [D-010 evidence](../evidence/D-010-ADJUST.md) |
 | 2026-09-09 | User cung cấp GitHub remote `nbzezo/portsip_mpt` | Gắn `origin` local, chuẩn bị `.github/workflows/ci.yml`; G0-04 đạt 20% nhưng vẫn blocked chờ hosted run, branch protection và independent G0-02 acceptance |
+| 2026-09-09 | User ủy quyền external write và push `main` lên GitHub | Push thành công `main -> origin/main`; G0-04 đạt 30%, chờ hosted CI run và branch protection |
 
 ## 6. Trạng thái work item
 

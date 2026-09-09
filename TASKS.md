@@ -27,7 +27,7 @@
 
 ## Waiting On
 
-- [ ] **G0-04 — CI baseline** - Blocked/20%; GitHub remote/workflow prepared 2026-09-09; waiting on first hosted run, G0-02 independent acceptance and branch protection; assignee/accountable `Forge` + `Atlas`; reviewer `Beacon`; escalation 2026-09-10; target Gate 0
+- [ ] **G0-04 — CI baseline** - Blocked/30%; pushed `main` to GitHub and workflow submitted 2026-09-09; waiting on first hosted run, G0-02 independent acceptance and branch protection; assignee/accountable `Forge` + `Atlas`; reviewer `Beacon`; escalation 2026-09-10; target Gate 0
   - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`
 - [ ] **G0-06 — Local/CI synthetic environment** - Blocked/0%; waiting since 2026-09-08 on approved runtime; local preflight 2026-09-09 found no Docker, Podman or nerdctl; assignee/accountable `Forge`; reviewers `Sentinel` + `Beacon`; escalation 2026-09-10; target Gate 0
   - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`

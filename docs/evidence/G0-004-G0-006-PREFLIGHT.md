@@ -10,8 +10,8 @@
 | Check | Result | Consequence |
 |---|---|---|
 | Git branch | `main` | Local branch exists |
-| Git remote | `origin=https://github.com/nbzezo/portsip_mpt.git` configured locally | GitHub is the selected CI hosting target; remote currently returns no branch HEAD in read-only probe |
-| Repository CI definition | `.github/workflows/ci.yml` prepared locally | Hosted pipeline still needs first push/run and branch-protection configuration |
+| Git remote | `origin=https://github.com/nbzezo/portsip_mpt.git`; `main` pushed successfully | GitHub is the selected CI hosting target; remote now has the submitted branch |
+| Repository CI definition | `.github/workflows/ci.yml` pushed with `main` | Hosted pipeline still needs first run result and branch-protection configuration |
 | CI runtime marker | None present in the current shell | Current execution is not evidence from a CI runner |
 | Docker CLI | Not found | Cannot start the planned containerized synthetic environment |
 | Podman CLI | Not found | No approved alternative container runtime available |
@@ -23,7 +23,7 @@ No remote call, provider mutation, container installation or external resource c
 
 `G0-04` remains blocked at partial progress. `Forge`, `Atlas` and `Beacon` are assigned under D-024. Before it can become `Ready`, they must provide:
 
-- first push/run against the selected GitHub repository and remote/project reference;
+- successful first hosted run against the selected GitHub repository;
 - branch-protection/reviewer and artifact-retention requirements;
 - approved runner/secret model and dependency-cache policy;
 - confirmation that the `G0-02` dependency has reached the required state.
