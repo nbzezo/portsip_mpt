@@ -10,8 +10,8 @@
 | Check | Result | Consequence |
 |---|---|---|
 | Git branch | `main` | Local branch exists |
-| Git remote | None configured | Cannot identify CI hosting provider or push/branch-protection target |
-| Repository CI definition | No `.github`, GitLab, Azure Pipelines or Jenkins definition found | No hosted pipeline baseline exists in the current snapshot |
+| Git remote | `origin=https://github.com/nbzezo/portsip_mpt.git` configured locally | GitHub is the selected CI hosting target; remote currently returns no branch HEAD in read-only probe |
+| Repository CI definition | `.github/workflows/ci.yml` prepared locally | Hosted pipeline still needs first push/run and branch-protection configuration |
 | CI runtime marker | None present in the current shell | Current execution is not evidence from a CI runner |
 | Docker CLI | Not found | Cannot start the planned containerized synthetic environment |
 | Podman CLI | Not found | No approved alternative container runtime available |
@@ -21,9 +21,9 @@ No remote call, provider mutation, container installation or external resource c
 
 ## G0-04 conclusion
 
-`G0-04` remains blocked. `Forge`, `Atlas` and `Beacon` are assigned under D-024, but before it can become `Ready` they must provide:
+`G0-04` remains blocked at partial progress. `Forge`, `Atlas` and `Beacon` are assigned under D-024. Before it can become `Ready`, they must provide:
 
-- selected repository/CI provider and remote/project reference;
+- first push/run against the selected GitHub repository and remote/project reference;
 - branch-protection/reviewer and artifact-retention requirements;
 - approved runner/secret model and dependency-cache policy;
 - confirmation that the `G0-02` dependency has reached the required state.

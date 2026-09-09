@@ -85,7 +85,7 @@ No finding above may be silently removed. Reviewer records new findings with sev
 |---|---|---|
 | Named aliases đã có nhưng separate reviewer execution chưa chạy | `Atlas` + `Sentinel` + `Forge` + `Beacon` | Prevents independent acceptance; see [Role Registry](../ROLE-REGISTRY.md) |
 | Exact PortSIP SDK/API/license/sandbox response absent | `Echo` + vendor | Blocks `D-002` and TEL/OUT/TRUNK PoCs |
-| Git remote, CI provider/definition and protected-branch policy absent | `Forge` + `Atlas` + `Beacon` | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
+| GitHub remote/workflow now prepared, but first hosted run and protected-branch policy absent | `Forge` + `Atlas` + `Beacon` | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
 | Docker/Podman/nerdctl and synthetic isolation policy absent | `Forge` + `Sentinel` + `Beacon` | Keeps `G0-06` and configuration thin slice blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
 | Independent junior/fresh reader absent | `Scout` + `Atlas` + `Beacon` | Keeps `DISC-HO-001`/`G0-07` unaccepted |
 
