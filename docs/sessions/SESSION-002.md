@@ -52,6 +52,7 @@
 | 2026-09-09 | Read-only preflight cho `G0-04/G0-06` | Xác nhận không có Git remote/CI definition/CI marker và không có Docker/Podman/nerdctl; items giữ `Blocked / 0%`; `docs/evidence/G0-004-G0-006-PREFLIGHT.md` |
 | 2026-09-09 | Project Owner phê duyệt named Codex role aliases | D-024 + `docs/ROLE-REGISTRY.md`; `DISC-KO-001` Accepted/100%; independent review vẫn cần execution tách biệt |
 | 2026-09-09 | Chạy lại full quality gate trên HEAD `75e2880` sau đồng bộ tài liệu | PASS — format/lint/typecheck, 2/2 tests, architecture source + fixtures và build; xác nhận không hồi quy, không thay independent acceptance |
+| 2026-09-09 | Clean-checkout replay trên HEAD `ca0e468` với registry access được ủy quyền | PASS — `core.autocrlf=true`, frozen install 261 packages, full gate, clean replay tree và cleanup; vẫn là implementation evidence |
 
 ## 6. Trạng thái work item
 
@@ -60,7 +61,7 @@
 | `G0-02` | Verification / 80% | Same-host clean checkout/frozen install/full gate PASS tại `bf760f6`; portability defect fixed | Independent clean-machine replay/review |
 | `G0-03` | In Review / 90% | Build Profile tái hiện từ clean checkout tại `bf760f6` | Independent clean-machine signature |
 | `G0-05` | In Review / 90% | Positive scan + negative fixtures theo toàn bộ acceptance hiện tại | Engineering Lead + Security acceptance; xác nhận path convention trước D-010 |
-| `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị | Named Telephony Owner gửi; vendor/customer response + Security/Architecture review |
+| `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị | `Echo` gửi bằng approved external account; vendor/customer response + Security/Architecture review |
 
 ## 7. Trạng thái đóng phiên
 
