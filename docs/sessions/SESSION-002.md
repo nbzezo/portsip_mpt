@@ -56,6 +56,7 @@
 | 2026-09-09 | Project Owner chọn hướng `Adjust` cho D-010 | Giữ kernel/authorization/voice P0 và role/config templates; chuyển visual/self-service builders sang P1; product build vẫn conditional; [D-010 evidence](../evidence/D-010-ADJUST.md) |
 | 2026-09-09 | User cung cấp GitHub remote `nbzezo/portsip_mpt` | Gắn `origin` local, chuẩn bị `.github/workflows/ci.yml`; G0-04 đạt 20% nhưng vẫn blocked chờ hosted run, branch protection và independent G0-02 acceptance |
 | 2026-09-09 | User ủy quyền external write và push `main` lên GitHub | Push thành công `main -> origin/main`; G0-04 đạt 30%, chờ hosted CI run và branch protection |
+| 2026-09-09 | User cài và mở Docker Desktop; runtime preflight | Docker Desktop 29.7.2/Compose 5.5.1, daemon `desktop-linux` và `hello-world` PASS; G0-06 đạt 15%, còn image policy/synthetic services/isolation |
 
 ## 6. Trạng thái work item
 

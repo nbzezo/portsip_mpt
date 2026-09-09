@@ -8,7 +8,7 @@
 - pnpm `11.19.0` qua Corepack hoặc binary tương đương.
 - Git.
 - Git checkout phải áp dụng `.gitattributes`; source text được chuẩn hóa `LF` trên mọi OS để `format:check` tái hiện được.
-- Docker/Podman chỉ cần từ G0-06; host hiện tại chưa có Docker.
+- Docker Desktop `29.7.2` đã được cài và daemon verified trên host; Docker/Podman chỉ cần cho G0-06. Synthetic image policy và services vẫn phải được review trước khi chạy.
 - Không cần PortSIP, CRM, IdP hoặc Production credential để chạy quality gate.
 
 Kiểm tra:
