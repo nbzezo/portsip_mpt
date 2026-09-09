@@ -45,6 +45,7 @@ Implementation-agent evidence currently shows:
 - architecture source scan and allowed/forbidden fixtures PASS;
 - packages/API/worker/web build PASS;
 - same-host clean checkout with `core.autocrlf=true` PASS after `.gitattributes` fixed the Windows CRLF portability defect;
+- clean-checkout replay at HEAD `ca0e468` with registry access authorized: frozen install 261 packages, full gate and clean replay tree PASS;
 - no PortSIP/CRM/IdP credential, real dial/send, trunk mutation or Production data used.
 
 The independent reviewer must reproduce the authoritative commands from the [Build Profile](../BUILD-PROFILE.md) and complete [G0-CLEAN-MACHINE-REVIEW](G0-CLEAN-MACHINE-REVIEW.md). Same-host evidence is not an independent signature.
@@ -74,7 +75,7 @@ The independent reviewer must reproduce the authoritative commands from the [Bui
 
 | Finding | Impact | Correction | Retest |
 |---|---|---|---|
-| Clean Windows clone converted 55 tracked text files to CRLF and failed Prettier | G0-03 portability/reproducibility failure | Added `.gitattributes`: `* text=auto eol=lf` | Same-host clean clone with `core.autocrlf=true`, frozen install and full gate PASS at `bf760f6` |
+| Clean Windows clone converted 55 tracked text files to CRLF and failed Prettier | G0-03 portability/reproducibility failure | Added `.gitattributes`: `* text=auto eol=lf` | Same-host clean clone with `core.autocrlf=true`, frozen install and full gate PASS at `bf760f6`; replay reconfirmed at `ca0e468` |
 
 No finding above may be silently removed. Reviewer records new findings with severity, owner, due date and retest evidence.
 
@@ -84,9 +85,9 @@ No finding above may be silently removed. Reviewer records new findings with sev
 |---|---|---|
 | Named aliases đã có nhưng separate reviewer execution chưa chạy | `Atlas` + `Sentinel` + `Forge` + `Beacon` | Prevents independent acceptance; see [Role Registry](../ROLE-REGISTRY.md) |
 | Exact PortSIP SDK/API/license/sandbox response absent | `Echo` + vendor | Blocks `D-002` and TEL/OUT/TRUNK PoCs |
-| Git remote, CI provider/definition and protected-branch policy absent | Engineering Lead + DevOps + QA | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
-| Docker/Podman/nerdctl and synthetic isolation policy absent | DevOps + Security + QA | Keeps `G0-06` and configuration thin slice blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
-| Independent junior/fresh reader absent | Engineering Lead + QA | Keeps `DISC-HO-001`/`G0-07` unaccepted |
+| Git remote, CI provider/definition and protected-branch policy absent | `Forge` + `Atlas` + `Beacon` | Keeps `G0-04` blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
+| Docker/Podman/nerdctl and synthetic isolation policy absent | `Forge` + `Sentinel` + `Beacon` | Keeps `G0-06` and configuration thin slice blocked; [local preflight evidence](G0-004-G0-006-PREFLIGHT.md) |
+| Independent junior/fresh reader absent | `Scout` + `Atlas` + `Beacon` | Keeps `DISC-HO-001`/`G0-07` unaccepted |
 
 ## 8. Sign-off record
 
