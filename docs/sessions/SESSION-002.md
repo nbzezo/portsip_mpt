@@ -53,6 +53,7 @@
 | 2026-09-09 | Project Owner phê duyệt named Codex role aliases | D-024 + `docs/ROLE-REGISTRY.md`; `DISC-KO-001` Accepted/100%; independent review vẫn cần execution tách biệt |
 | 2026-09-09 | Chạy lại full quality gate trên HEAD `75e2880` sau đồng bộ tài liệu | PASS — format/lint/typecheck, 2/2 tests, architecture source + fixtures và build; xác nhận không hồi quy, không thay independent acceptance |
 | 2026-09-09 | Clean-checkout replay trên HEAD `ca0e468` với registry access được ủy quyền | PASS — `core.autocrlf=true`, frozen install 261 packages, full gate, clean replay tree và cleanup; vẫn là implementation evidence |
+| 2026-09-09 | Project Owner chọn hướng `Adjust` cho D-010 | Giữ kernel/authorization/voice P0 và role/config templates; chuyển visual/self-service builders sang P1; product build vẫn conditional; [D-010 evidence](../evidence/D-010-ADJUST.md) |
 
 ## 6. Trạng thái work item
 

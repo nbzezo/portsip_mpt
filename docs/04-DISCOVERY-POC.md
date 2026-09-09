@@ -170,6 +170,8 @@ Tạo một bộ mặc định 30–50 cuộc gọi được thực thi, cộng 
 
 ## 7. Go/Adjust/Stop gate sau PoC
 
+Project Owner/user đã chọn hướng `Adjust` ngày `2026-09-09`; đây là direction để re-baseline, chưa phải signed authorization cho product build. Các điều kiện Gate 0, exact PortSIP evidence, PoC và security/operations acceptance vẫn phải đạt trước khi mở build.
+
 ### Go
 
 - Exact PortSIP version/license hỗ trợ toàn bộ **PortSIP-dependent** capability trong `MVP/P0`; app-owned P0 được đánh giá bằng feasibility/estimate riêng.

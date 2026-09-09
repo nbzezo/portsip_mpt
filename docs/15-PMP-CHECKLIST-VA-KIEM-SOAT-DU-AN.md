@@ -37,7 +37,7 @@ Khi issue tracker chính thức được chọn, tracker là source of truth cho
 - [ ] Project charter nêu business need, mục tiêu giá trị, high-level scope/non-goal, ROM, deadline constraint và success measures.
 - [ ] Stakeholder register có ảnh hưởng, mức quan tâm, nhu cầu thông tin, decision authority và escalation path.
 - [ ] Assumption/constraint log có owner, ngày cần xác minh và impact nếu sai.
-- [ ] D-010 ghi rõ hiện chỉ Discovery/PoC được Go; funding/authority không bị hiểu thành toàn bộ build.
+- [x] D-010 ghi rõ hướng `Adjust`; hiện chỉ Discovery/PoC được Go, funding/authority không bị hiểu thành toàn bộ build.
 - [ ] Privacy, legal/compliance, carrier, recording và outbound consent/DNC stakeholders tham gia từ đầu.
 - [ ] Success không chỉ là “go-live”: có adoption, service outcome, operational readiness và benefits owner.
 
@@ -184,7 +184,7 @@ Session control: `002 — In Progress`; base Git reference `session-001`. Regist
 
 | WBS | Work packages | Authorized state | Status | Progress |
 |---|---:|---|---|---:|
-| Discovery/governance | D-001–D-024 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only | PMP + kickoff Accepted; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — chưa baseline |
+| Discovery/governance | D-001–D-024 + kickoff/PortSIP/handover/PMP items | Discovery/PoC only; Adjust direction selected | PMP + kickoff Accepted; D-010 Adjust direction; PortSIP scan 75%; nhiều decision Open/Hypothesis | N/A — final build authorization chưa baseline |
 | Gate 0 | G0-01–G0-07 (7) | Discovery scaffold only; product build vẫn blocked | G0-01 Accepted; G0-02 80%; G0-03 90%; G0-05 90%; còn lại Blocked | Chưa baseline; báo theo status |
 | Epic A — Platform Kernel | 10 | Blocked by D-010 + Gate 0 | Not Started | 0% |
 | Epic B — Authorization | 12 | Blocked by D-010 + decisions | Not Started | 0% |
@@ -194,7 +194,7 @@ Session control: `002 — In Progress`; base Git reference `session-001`. Regist
 | Epic F — Outbound | 14 | PoC evidence allowed; real dialing prohibited except approved sandbox test | Not Started | 0% |
 | Epic G — SIP trunk Admin | 8 | Read/PoC only until D-011/exact contract; effective writes prohibited | Not Started | 0% |
 | Epic H — Supervisor/report/readiness | 8 | Blocked by foundations | Not Started | 0% |
-| **Product WBS total** | **93** | Chưa được D-010 Go | **Not Started** | **0%** |
+| **Product WBS total** | **93** | D-010 Adjust selected nhưng chưa authorized build | **Not Started** | **0%** |
 
 Current operational detail nằm ở [Current Work Ledger](14-CONG-VIEC-HIEN-TAI.md) và [TASKS.md](../TASKS.md). PM cập nhật snapshot này ở weekly status; Active task cập nhật hằng ngày.
 

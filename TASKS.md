@@ -36,8 +36,9 @@
 - [ ] **POC-TRUNK-001 — SIP trunk/DID/rule Admin PoC** - Blocked/0%; waiting on exact endpoint/role/ownership matrix and approved isolated sandbox since 2026-09-08; target Day 8
 - [ ] **POC-CONFIG-001 — Authorization/config/form/workflow thin slice** - Blocked/0%; waiting on G0-06 since 2026-09-08; assignee/accountable `Atlas`; reviewers `Sentinel` + `Compass` + `Beacon`; target Day 9
 - [ ] **G0-07 — Contributor quick-start** - Blocked/0%; waiting on G0-03–G0-06 since 2026-09-08; assignee `Scout`; accountable `Atlas`; reviewer `Beacon`; target before D-010 decision pack
-- [ ] **D-010 — Build authorization** - waiting on Discovery/PoC evidence and `Owner` decision since 2026-09-08; target Discovery Day 10
-  - Outcome phải là Approved + gate Go/Adjust trước product build.
+- [ ] **D-010 — Build authorization** - `Adjust` direction selected by `Owner` on 2026-09-09; final authorization still waiting on Discovery/PoC evidence
+  - Adjust baseline: giữ kernel/authorization/voice P0/role-config templates; chuyển visual form/workflow builders sang P1; build vẫn chưa được phép.
+  - Evidence: `docs/evidence/D-010-ADJUST.md`; final outcome phải có signed gate và evidence pack.
 
 ## Someday
 

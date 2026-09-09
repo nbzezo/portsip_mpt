@@ -47,7 +47,7 @@ Reviewer(s):
 
 ## 3. Gate 0 — quyết định và scaffold
 
-**Trạng thái phân công hiện tại:** D-010 vẫn `Pending`; chỉ Discovery/Feasibility PoC được phép chạy. Trước G0-01, team chỉ làm decision/evidence và thí nghiệm stack-neutral; không cài dependency hoặc tạo framework scaffold. G0-02 chỉ bắt đầu sau khi D-023 có outcome `Approved`, trong môi trường PoC với owner, stop condition và cleanup đã ghi. Kết quả PoC không tự trở thành production baseline. Product build, production credential/data, real outbound dial và thay đổi PortSIP effective configuration phải chờ D-010 có outcome `Approved`/gate `Go` cùng các security/telephony gate liên quan.
+**Trạng thái phân công hiện tại:** D-010 đã chọn hướng `Adjust` nhưng chưa cấp quyền build; chỉ Discovery/Feasibility PoC được phép chạy. Trước G0-01, team chỉ làm decision/evidence và thí nghiệm stack-neutral; không cài dependency hoặc tạo framework scaffold. G0-02 chỉ bắt đầu sau khi D-023 có outcome `Approved`, trong môi trường PoC với owner, stop condition và cleanup đã ghi. Kết quả PoC không tự trở thành production baseline. Product build, production credential/data, real outbound dial và thay đổi PortSIP effective configuration phải chờ D-010 final authorization cùng các security/telephony gate liên quan.
 
 Junior mới hiện chưa được tự chọn một ticket business-code để bắt đầu. Starter duy nhất đang `Ready` là `DISC-HO-001` trong [Current Work Ledger](14-CONG-VIEC-HIEN-TAI.md); công việc này chỉ kiểm định tài liệu, không cần scaffold/credential/network. `G0-07` chỉ bắt đầu sau khi `G0-03` có Build Profile chạy thật. Nếu ticket không ghi rõ nó là `Discovery evidence`, `PoC-only` hay `Production build`, ticket chưa đạt Definition of Ready.
 
