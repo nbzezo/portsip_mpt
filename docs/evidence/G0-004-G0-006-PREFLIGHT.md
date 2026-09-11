@@ -3,7 +3,7 @@
 - Date: `2026-09-09`
 - Executor: Codex implementation agent
 - Scope: read-only local environment/repository inspection
-- Status: diagnostic evidence only; `G0-04` and `G0-06` remain `Blocked / 0%`
+- Status: diagnostic preflight plus runtime update; `G0-04` remains blocked and `G0-06` remains `Blocked / 45%`
 
 ## Observed state
 
@@ -13,8 +13,8 @@
 | Git remote | `origin=https://github.com/nbzezo/portsip_mpt.git`; `main` pushed successfully | GitHub is the selected CI hosting target; remote now has the submitted branch |
 | Repository CI definition | `.github/workflows/ci.yml` pushed with `main` | Hosted pipeline still needs first run result and branch-protection configuration |
 | CI runtime marker | None present in the current shell | Current execution is not evidence from a CI runner |
-| Docker CLI/daemon | PASS when Docker Desktop is running — Docker Desktop 29.7.2; `docker info` via `desktop-linux`; `hello-world` ran successfully | Container runtime is available; daemon was not stable for digest capture in the latest attempt; synthetic image/policy/service setup is still required |
-| Synthetic Compose/fake services | PASS — `docker compose ... config --quiet` and `node --check infra/local/fakes/server.mjs` | Scaffold is structurally valid; no container was started; digest lock, runtime replay and isolation evidence remain open |
+| Docker CLI/daemon | PASS when Docker Desktop is running — Docker Desktop 29.7.2; `docker info` via `desktop-linux`; `hello-world` ran successfully | Container runtime is available; digest capture and runtime replay are recorded below |
+| Synthetic Compose/fake services | PASS — `docker compose ... config --quiet` and `node --check infra/local/fakes/server.mjs` | Scaffold was structurally valid during preflight; runtime replay is recorded below |
 | Runtime replay | PASS — all 5 Compose services healthy; fake `/health` HTTP 200, Redis `PONG`, PostgreSQL `pg_isready` accepting connections via `docker exec` | Local-only synthetic runtime; host port forwarding unavailable in terminal session; reviewer/isolation sign-off remains open |
 | Podman CLI | Not found | No approved alternative container runtime available |
 | nerdctl CLI | Not found | No containerd CLI fallback available |

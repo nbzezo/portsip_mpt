@@ -29,7 +29,7 @@
 
 - [ ] **G0-04 — CI baseline** - Blocked/30%; pushed `main` to GitHub and workflow submitted 2026-09-09; waiting on first hosted run, G0-02 independent acceptance and branch protection; assignee/accountable `Forge` + `Atlas`; reviewer `Beacon`; escalation 2026-09-10; target Gate 0
   - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`
-- [ ] **G0-06 — Local/CI synthetic environment** - Blocked/45%; Compose runtime replayed 2026-09-11 with all 5 services healthy and image digests captured; waiting on reviewer/isolation sign-off; assignee/accountable `Forge`; reviewers `Sentinel` + `Beacon`; escalation 2026-09-10; target Gate 0
+- [ ] **G0-06 — Local/CI synthetic environment** - Blocked/45%; Compose runtime and candidate reviewer acceptance PASS 2026-09-11; waiting on named `Sentinel` + `Beacon` sign-off; assignee/accountable `Forge`; reviewers `Sentinel` + `Beacon`; escalation 2026-09-10; target Gate 0
   - Evidence: `docs/evidence/G0-004-G0-006-PREFLIGHT.md`
 - [ ] **POC-TEL-001 — Inbound + event/CDR/recording PoC** - Blocked/0%; waiting on D-002 exact sandbox/SDK/API and approved external account since 2026-09-08; assignee/accountable `Echo`; reviewers `Sentinel` + `Beacon` + `Atlas`; target Day 6
 - [ ] **POC-OUT-001 — Preview/progressive 1:1 outbound PoC** - Blocked/0%; waiting on D-002, D-008/D-013 compliance/carrier inputs and synthetic environment since 2026-09-08; target Day 8
