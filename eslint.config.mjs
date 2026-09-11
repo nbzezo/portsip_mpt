@@ -8,6 +8,7 @@ export default tseslint.config(
       "**/dist/**",
       "**/coverage/**",
       "tests/architecture/fixtures/**",
+      "infra/local/fakes/**",
       "dashboard.html",
     ],
   },

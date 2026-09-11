@@ -61,6 +61,7 @@
 | 2026-09-11 | Tạo synthetic Compose stack và fake services | `infra/local/compose.synthetic.yml`, fake IdP/PortSIP/CRM; Compose config + Node syntax PASS, chưa start container; G0-06 đạt 30%, còn digest/runtime/isolation replay |
 | 2026-09-11 | Replay synthetic runtime theo ủy quyền local-only | PostgreSQL, Redis, fake IdP/PortSIP/CRM đều healthy; digests captured and pinned; host port forwarding unavailable in terminal session; G0-06 đạt 45%, chờ Sentinel/Beacon review |
 | 2026-09-11 | Chạy reviewer acceptance cho G0-06 | Candidate PASS cho Compose, digest lock, health, network isolation, egress block, synthetic-only data và mount boundary; chưa tự ký Sentinel/Beacon; [G0-06 review](../evidence/G0-06-REVIEW.md) |
+| 2026-09-11 | Replay quality gate trên HEAD sau synthetic scaffold | `CI=true; pnpm run check` và `node --check infra/local/fakes/server.mjs` PASS; cập nhật ESLint ignore cho fake-service runtime; không thay thế independent review G0-02/G0-03/G0-05 |
 
 ## 6. Trạng thái work item
 
