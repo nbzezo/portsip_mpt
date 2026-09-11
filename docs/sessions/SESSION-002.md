@@ -58,6 +58,7 @@
 | 2026-09-09 | User ủy quyền external write và push `main` lên GitHub | Push thành công `main -> origin/main`; G0-04 đạt 30%, chờ hosted CI run và branch protection |
 | 2026-09-09 | User cài và mở Docker Desktop; runtime preflight | Docker Desktop 29.7.2/Compose 5.5.1, daemon `desktop-linux` và `hello-world` PASS; G0-06 đạt 15%, còn image policy/synthetic services/isolation |
 | 2026-09-11 | Project Owner phê duyệt D-025 image/version/checksum policy | PostgreSQL `18.0-bookworm`, Redis `8.2.2-bookworm`, repository-owned fake services, digest lock và isolation rules; digest capture chờ Docker daemon ổn định |
+| 2026-09-11 | Tạo synthetic Compose stack và fake services | `infra/local/compose.synthetic.yml`, fake IdP/PortSIP/CRM; Compose config + Node syntax PASS, chưa start container; G0-06 đạt 30%, còn digest/runtime/isolation replay |
 
 ## 6. Trạng thái work item
 

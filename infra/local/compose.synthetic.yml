@@ -1,0 +1,126 @@
+name: portsip-cc-synthetic
+
+services:
+  postgres:
+    image: postgres:18.0-bookworm
+    restart: "no"
+    environment:
+      POSTGRES_DB: portsip_cc_synthetic
+      POSTGRES_USER: synthetic_app
+      POSTGRES_PASSWORD: synthetic_only_password
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - synthetic-postgres:/var/lib/postgresql
+    networks: [synthetic]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U synthetic_app -d portsip_cc_synthetic"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    init: true
+
+  redis:
+    image: redis:8.2.2-bookworm
+    restart: "no"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    ports:
+      - "127.0.0.1:56379:6379"
+    volumes:
+      - synthetic-redis:/data
+    networks: [synthetic]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    init: true
+
+  fake-idp:
+    build:
+      context: ./fakes
+      args:
+        SERVICE_NAME: fake-idp
+    restart: "no"
+    environment:
+      FAKE_SERVICE: idp
+    ports:
+      - "127.0.0.1:58080:8080"
+    networks: [synthetic]
+    read_only: true
+    tmpfs: [/tmp]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:8080/health').then(r => { if (!r.ok) process.exit(1) })",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    init: true
+
+  fake-portsip:
+    build:
+      context: ./fakes
+      args:
+        SERVICE_NAME: fake-portsip
+    restart: "no"
+    environment:
+      FAKE_SERVICE: portsip
+    ports:
+      - "127.0.0.1:58081:8080"
+    networks: [synthetic]
+    read_only: true
+    tmpfs: [/tmp]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:8080/health').then(r => { if (!r.ok) process.exit(1) })",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    init: true
+
+  fake-crm:
+    build:
+      context: ./fakes
+      args:
+        SERVICE_NAME: fake-crm
+    restart: "no"
+    environment:
+      FAKE_SERVICE: crm
+    ports:
+      - "127.0.0.1:58082:8080"
+    networks: [synthetic]
+    read_only: true
+    tmpfs: [/tmp]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:8080/health').then(r => { if (!r.ok) process.exit(1) })",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    init: true
+
+networks:
+  synthetic:
+    name: portsip-cc-synthetic
+    internal: true
+
+volumes:
+  synthetic-postgres:
+    name: portsip-cc-synthetic-postgres
+  synthetic-redis:
+    name: portsip-cc-synthetic-redis

@@ -1,0 +1,15 @@
+version: 1
+status: PENDING_DIGEST_CAPTURE
+platform: linux/amd64
+retrieved_at: null
+reviewer: null
+images:
+  postgres:
+    reference: postgres:18.0-bookworm
+    digest: null
+  redis:
+    reference: redis:8.2.2-bookworm
+    digest: null
+  fake_services_base:
+    reference: node:24.15.0-bookworm-slim
+    digest: null
