@@ -39,6 +39,7 @@ Trạng thái dùng chung:
 | [Session 001](sessions/SESSION-001.md) | Snapshot, kiểm chứng, blocker và next action cuối phiên 001 | Người tiếp nhận/Codex | Delivery Lead | Immutable sau khi tag; đính chính ở phiên sau |
 | [TASKS.md](../TASKS.md) | Active/Waiting/Someday/Done hằng ngày | Tất cả | Project Manager/Delivery Lead | Cùng ngày khi task đổi trạng thái |
 | [Role Registry](ROLE-REGISTRY.md) | Named Codex role aliases, authority và separation-of-duties theo D-024 | Tất cả | Project Owner | Assignment/authority/review model đổi |
+| [Synthetic image policy](../infra/local/IMAGE-POLICY.md) | Image source/version/digest/isolation cho G0-06 theo D-025 | DevOps/Security/QA | `Forge` + `Sentinel` | Runtime/image policy đổi |
 | [AGENTS.md](../AGENTS.md) | Working agreement bắt buộc cho người/agent sửa repository | Contributor/automation | Engineering Lead | Gate/task-tracking/repo rule đổi |
 
 D-023 đã Approved có điều kiện cho Discovery scaffold; G0-02/G0-03 đã tạo scaffold và `docs/BUILD-PROFILE.md`. File này hiện là nguồn chuẩn cho exact tool versions và runnable commands, nhưng G0-03 vẫn chờ independent clean-machine review trước khi đạt 100%.
