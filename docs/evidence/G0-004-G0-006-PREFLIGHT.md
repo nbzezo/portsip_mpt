@@ -15,6 +15,7 @@
 | CI runtime marker | None present in the current shell | Current execution is not evidence from a CI runner |
 | Docker CLI/daemon | PASS when Docker Desktop is running — Docker Desktop 29.7.2; `docker info` via `desktop-linux`; `hello-world` ran successfully | Container runtime is available; daemon was not stable for digest capture in the latest attempt; synthetic image/policy/service setup is still required |
 | Synthetic Compose/fake services | PASS — `docker compose ... config --quiet` and `node --check infra/local/fakes/server.mjs` | Scaffold is structurally valid; no container was started; digest lock, runtime replay and isolation evidence remain open |
+| Runtime replay | PASS — all 5 Compose services healthy; fake `/health` HTTP 200, Redis `PONG`, PostgreSQL `pg_isready` accepting connections via `docker exec` | Local-only synthetic runtime; host port forwarding unavailable in terminal session; reviewer/isolation sign-off remains open |
 | Podman CLI | Not found | No approved alternative container runtime available |
 | nerdctl CLI | Not found | No containerd CLI fallback available |
 
@@ -41,7 +42,7 @@ Preparing a local YAML file without those decisions would not prove hosted CI or
 - deterministic start/health/reset/cleanup acceptance;
 - confirmation that no route or credential can reach Production.
 
-No container runtime should be installed or images downloaded under the current authorization.
+Runtime replay was explicitly authorized by the Project Owner for local-only synthetic validation; no production credentials, data or routes were used.
 
 ## Next review
 

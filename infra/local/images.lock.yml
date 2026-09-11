@@ -1,15 +1,15 @@
 version: 1
-status: PENDING_DIGEST_CAPTURE
+status: PENDING_REVIEW
 platform: linux/amd64
-retrieved_at: null
+retrieved_at: "2026-09-11"
 reviewer: null
 images:
   postgres:
     reference: postgres:18.0-bookworm
-    digest: null
+    digest: sha256:3f55f8895c4ed50603e2fbdfc72fffeeaba3173321fee5cb825bbbeb30d9d854
   redis:
     reference: redis:8.2.2-bookworm
-    digest: null
+    digest: sha256:4521b581dbddea6e7d81f8fe95ede93f5648aaa66a9dacd581611bf6fe7527bd
   fake_services_base:
     reference: node:24.15.0-bookworm-slim
-    digest: null
+    digest: sha256:4e6b70dd6cbfc88c8157ba19aa3d9f9cce6ba4703576d55459e45efcbc9c5f5d

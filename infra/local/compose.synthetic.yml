@@ -2,7 +2,7 @@ name: portsip-cc-synthetic
 
 services:
   postgres:
-    image: postgres:18.0-bookworm
+    image: postgres:18.0-bookworm@sha256:3f55f8895c4ed50603e2fbdfc72fffeeaba3173321fee5cb825bbbeb30d9d854
     restart: "no"
     environment:
       POSTGRES_DB: portsip_cc_synthetic
@@ -21,7 +21,7 @@ services:
     init: true
 
   redis:
-    image: redis:8.2.2-bookworm
+    image: redis:8.2.2-bookworm@sha256:4521b581dbddea6e7d81f8fe95ede93f5648aaa66a9dacd581611bf6fe7527bd
     restart: "no"
     command: ["redis-server", "--save", "", "--appendonly", "no"]
     ports:

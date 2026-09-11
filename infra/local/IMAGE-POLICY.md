@@ -3,7 +3,7 @@
 - Decision: `D-025`
 - Approved direction: Project Owner/user — `2026-09-11`
 - Scope: G0-06 local/CI synthetic environment only
-- Status: policy approved; Compose scaffold created; digest capture pending stable Docker daemon
+- Status: policy approved; digests captured from Docker Desktop on `2026-09-11`; reviewer sign-off pending
 
 ## Approved image sources
 
@@ -24,10 +24,8 @@
 5. Image updates require a review of release notes, CVE impact, smoke tests and lock-file diff.
 6. No `latest`, floating major tags, unreviewed third-party images, host networking, or production secrets.
 
-The Compose scaffold is [compose.synthetic.yml](compose.synthetic.yml). It is intentionally not
-runtime-authoritative while `images.lock.yml` has `PENDING_DIGEST_CAPTURE`; replace each `null`
-digest only from an approved registry pull, then update the Compose image references to
-`tag@sha256:<digest>` in the same reviewed change.
+The Compose scaffold is [compose.synthetic.yml](compose.synthetic.yml). Digests are now pinned
+from an approved registry pull; runtime authority remains pending reviewer sign-off.
 
 ## Required isolation
 
