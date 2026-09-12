@@ -3,6 +3,8 @@
 ## Active
 
 - [ ] **PROD-SYN-001 — Provisional synthetic Agent Workspace vertical slice** - In Review/90%; shell implemented and full quality gate PASS 2026-09-12; waiting on separate `Sentinel` + `Beacon` review; synthetic adapters only, no real dial/send or production data; assignee/accountable `Atlas`; due 2026-09-15; evidence `docs/evidence/PROD-SYN-001.md`
+- [ ] **PROD-CORE-001 — Synthetic authorization/configuration contracts** - Ready/0%; parallel product track authorized 2026-09-12 under D-010 Adjust; typed contracts and lifecycle only, no vendor writes; assignee/accountable `Atlas`; reviewers `Sentinel` + `Compass` + `Beacon`; due 2026-09-19; evidence `docs/evidence/PROD-CORE-001.md`
+- [ ] **PROD-CRM-001 — Synthetic CRM business workflow** - Ready/0%; parallel product track authorized 2026-09-12; synthetic contacts/cases and agent workflow only; assignee/accountable `Compass`; reviewers `Atlas` + `Sentinel` + `Beacon`; due 2026-09-19; evidence `docs/evidence/PROD-CRM-001.md`
 
 - [ ] **DISC-PS-001 — Xác minh PortSIP version/API/SDK/license** - Verification/75%; actual start 2026-09-08; assignee/accountable `Echo`; required reviewers `Sentinel` + `Atlas`; due Discovery Day 3
   - Public evidence xác nhận PBX 22.6.3, SBC 11.2.8, REST/WSI public 22.3 và SDK native 19.6.2; exact customer artifact/license/sandbox còn thiếu.

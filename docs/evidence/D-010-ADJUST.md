@@ -6,7 +6,7 @@
 - Approved by: Project Owner/user
 - Evidence status: `Provisional synthetic build authorized; real product/integration build remains conditional`
 
-Project Owner/user chọn phương án **Adjust** và ngày `2026-09-12` xác nhận mở **provisional synthetic product build**: giữ kernel/authorization/voice P0 và role/config templates; chuyển visual/self-service form/workflow builders sang P1. Phạm vi provisional chỉ dùng synthetic adapters, không dial/send thật, không production credential/data/route và không tích hợp PortSIP/CRM/IdP thật. Product/integration build chính thức vẫn chờ Gate 0, exact PortSIP evidence, PoC và security/operations acceptance.
+Project Owner/user chọn phương án **Adjust** và ngày `2026-09-12` xác nhận mở **provisional synthetic product build** theo hai track song song: (A) khung sản phẩm/nghiệp vụ/CRM dùng synthetic adapters; (B) PortSIP discovery/contract/PoC độc lập để tích hợp sau khi sẵn sàng. Giữ kernel/authorization/voice P0 và role/config templates; chuyển visual/self-service form/workflow builders sang P1. Phạm vi provisional chỉ dùng synthetic adapters, không dial/send thật, không production credential/data/route và không tích hợp PortSIP/CRM/IdP thật. Product/integration build chính thức vẫn chờ Gate 0, exact PortSIP evidence, PoC và security/operations acceptance.
 
 ## Conditions before build authorization
 
