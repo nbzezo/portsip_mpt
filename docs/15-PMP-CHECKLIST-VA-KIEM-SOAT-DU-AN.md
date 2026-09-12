@@ -178,9 +178,9 @@ Một task chỉ là `Accepted/100%` khi người có authority chấp nhận. A
 
 ## 6. Current project control snapshot
 
-Ngày snapshot: `2026-09-09`.
+Ngày snapshot: `2026-09-12`.
 
-Session control: `002 — In Progress`; base Git reference `session-001`. Registry: [docs/sessions/README.md](sessions/README.md).
+Session control: `002 — In Progress`; base Git reference `session-001`. Registry: [docs/sessions/README.md](sessions/README.md). Provisional synthetic slice `PROD-SYN-001` đã được Owner/user authorize ngày `2026-09-12`; slice này không mở quyền real PortSIP/CRM/IdP integration.
 
 | WBS | Work packages | Authorized state | Status | Progress |
 |---|---:|---|---|---:|
