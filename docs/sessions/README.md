@@ -31,4 +31,5 @@ Có thể viết số không có zero-padding, ví dụ “phiên làm việc 2�
 | Phiên | Trạng thái | Ngày | Phạm vi chính | Git reference | Bàn giao sang |
 |---|---|---|---|---|---|
 | [001](SESSION-001.md) | **Closed** | 2026-09-08 | Kickoff, PortSIP public scan, architecture baseline, stack/scaffold, PMP/WBS/handoff | `session-001` | `002` |
-| [002](SESSION-002.md) | **In Progress** | 2026-09-08 | Gate 0 verification; negative architecture fixture/evidence | Base `session-001` | — |
+| [002](SESSION-002.md) | **Closed** | 2026-09-08 → 2026-09-12 | Gate 0 verification, synthetic runtime/isolation, provisional Agent Workspace | `session-002` | `003` |
+| [003](SESSION-003.md) | **Planned — handoff ready** | 2026-09-12 | Synthetic business, authorization/configuration and CRM build; PortSIP left parallel | `session-002` | — |

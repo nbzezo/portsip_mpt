@@ -4,7 +4,7 @@
 
 Ledger này trả lời câu hỏi đầu tiên của người tiếp nhận: **“Tôi được làm việc nào ngay bây giờ?”** Đây là nguồn chuẩn cho authorization/dependency của work item tới khi issue tracker chính thức được chọn và liên kết trong D-010. Chỉ item có `Status = Ready`, assignee rõ và đủ Definition of Ready mới được bắt đầu. Sau khi activate, trạng thái hằng ngày nằm ở [TASKS.md](../TASKS.md); quy tắc progress/acceptance/reporting nằm ở [PMP control checklist](15-PMP-CHECKLIST-VA-KIEM-SOAT-DU-AN.md).
 
-Snapshot: `2026-09-09` — giai đoạn `Discovery / Solution Design`; Project Owner đã khởi động Discovery. D-023 đã Approved có điều kiện cho Discovery scaffold; scaffold và Build Profile đã có, quality gate pass. D-010 đã chọn hướng `Adjust` nhưng vẫn chưa cho product build.
+Snapshot: `2026-09-12` — giai đoạn `Provisional synthetic build / PortSIP parallel discovery`; Project Owner đã cho phép dựng khung nghiệp vụ/CRM bằng synthetic adapters. D-010 `Adjust`; real PortSIP/CRM/IdP integration vẫn chưa được authorize.
 
 Phiên làm việc `001` đã Closed; hồ sơ bất biến tại [SESSION-001](sessions/SESSION-001.md). Phiên `002` đang In Progress; hồ sơ tại [SESSION-002](sessions/SESSION-002.md).
 

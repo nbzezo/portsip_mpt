@@ -5,7 +5,7 @@
 | Trường | Giá trị |
 |---|---|
 | Session ID | `002` |
-| Trạng thái | **In Progress** |
+| Trạng thái | **Closed** |
 | Bắt đầu | `2026-09-08` |
 | Executor | Codex implementation agent |
 | Acceptance authority | Project Owner/user |
@@ -70,8 +70,11 @@
 | `G0-02` | Verification / 80% | Same-host clean checkout/frozen install/full gate PASS tại `bf760f6`; portability defect fixed | Independent clean-machine replay/review |
 | `G0-03` | In Review / 90% | Build Profile tái hiện từ clean checkout tại `bf760f6` | Independent clean-machine signature |
 | `G0-05` | In Review / 90% | Positive scan + negative fixtures theo toàn bộ acceptance hiện tại | Engineering Lead + Security acceptance; xác nhận path convention trước D-010 |
-| `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị | `Echo` gửi bằng approved external account; vendor/customer response + Security/Architecture review |
+| `DISC-PS-001` | Verification / 75% | Exact-evidence request đã chuẩn bị; PortSIP track được giữ độc lập | `Echo` gửi bằng approved external account; vendor/customer response + Security/Architecture review |
+| `PROD-SYN-001` | In Review / 90% | Synthetic Agent Workspace shell và quality gate PASS | `Sentinel` + `Beacon` independent review |
+| `PROD-CORE-001` | Ready / 0% | Đã mở synthetic authorization/configuration contract track | Session 003 triển khai typed lifecycle, không vendor write |
+| `PROD-CRM-001` | Ready / 0% | Đã mở synthetic CRM business workflow track | Session 003 triển khai synthetic contacts/cases và audit |
 
 ## 7. Trạng thái đóng phiên
 
-Phiên đang mở. Khi người dùng yêu cầu đóng phiên, cập nhật task/decision/evidence, chuyển trạng thái thành `Closed`, commit và gắn tag `session-002`.
+Phiên đã đóng ngày `2026-09-12`. PortSIP exact contract/license/sandbox vẫn để lại ở `DISC-PS-001` và tiếp tục độc lập; không chặn synthetic business/CRM build. Bàn giao chi tiết nằm tại [SESSION-003](SESSION-003.md). Commit đóng phiên và tag `session-002` phải trỏ cùng snapshot.
