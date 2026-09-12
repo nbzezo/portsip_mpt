@@ -2,6 +2,8 @@
 
 ## Active
 
+- [ ] **PROD-SYN-001 — Provisional synthetic Agent Workspace vertical slice** - In Review/90%; shell implemented and full quality gate PASS 2026-09-12; waiting on separate `Sentinel` + `Beacon` review; synthetic adapters only, no real dial/send or production data; assignee/accountable `Atlas`; due 2026-09-15; evidence `docs/evidence/PROD-SYN-001.md`
+
 - [ ] **DISC-PS-001 — Xác minh PortSIP version/API/SDK/license** - Verification/75%; actual start 2026-09-08; assignee/accountable `Echo`; required reviewers `Sentinel` + `Atlas`; due Discovery Day 3
   - Public evidence xác nhận PBX 22.6.3, SBC 11.2.8, REST/WSI public 22.3 và SDK native 19.6.2; exact customer artifact/license/sandbox còn thiếu.
   - Next action: `Echo` gửi request đã chuẩn bị bằng approved external account; `Sentinel` + `Atlas` review response trước khi mở PortSIP PoC.
